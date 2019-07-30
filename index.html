@@ -66,10 +66,10 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <img height="170" src="img/jiarong.jpeg" align="left" hspace="6" style="margin-left:-6p;margin-right:20px">
+        <img height="200" src="img/jiarong.jpeg" align="left" hspace="6" style="margin-left:-6p;margin-right:20px">
         <p></p>
-        <p> I am a Ph.D. student in Zhejiang University. I am very fortunate to be co-advised by <a href="http://yangy.org/">Yang Yang</a> and Jiangang Lu. </p>
-        <p> My research interests include social network analysis and user modeling. </p>
+        <p> I am a Ph.D. student in Zhejiang University, co-advised by <a href="http://yangy.org/">Yang Yang</a> and Jiangang Lu. I also fortunately have <a href="http://web.cs.ucla.edu/~yzsun/">Yizhou Sun</a> from UCLA as my external advisor. I obtained my bachelor degree in Electrical Engineering and Automation from Donghua University in 2016. </p>
+        <p> My research interests include social network analysis and user modeling. More specifically, I am interested in network denoising in online social networks, and learning to reconstruct a clean network to improve its quality and representative power. </p>
         <p> xujr {at} zju [dot] edu [dot] cn </p>
       </div>
     </div>
@@ -84,66 +84,13 @@
             <h4>NGUARD: A Game Bot Detection Framework for NetEase MMORPGs (KDD'18)</h4>
             <p style="margin:3px;">Jianrong Tao*, Jiarong Xu*, Linxia Gong, Yifu Li, Changjie Fan and Zhou Zhao (*: Equal Contribution)</p>
         </div>
-        <img width="350" src="works/nguard/model.jpg" align="left" style="margin-left:20px;margin-right:20px">
+        <img width="350" src="works/nguard/model.png" align="left" style="margin-left:20px;margin-right:20px">
         <p>Game bots are automated programs that assist cheating users and enable them to obtain huge superiority, leading to an imbalance in the game ecosystem and the collapse of user interest. Therefore, game bot detection becomes particularly important and urgent. Among many kinds of online games, massively multiplayer online role playing games (MMORPGs), such as World of Warcraft and AION, provide immersive gaming experience and attract many loyal fans. At the same time, however, game bots in MMORPGs have proliferated in volume and method, evolving with the real-world detection methods and showing strong diversity, leaving MMORPG bot detection efforts extremely difficult. </p>
         <p>To deal with the fast-changing nature of game bots, we here proposed a generalized game bot detection framework for MMORPGs termed NGUARD, denoting NetEase Games’ Guard. NGUARD takes charge of automatically differentiating game bots from humans for MMORPGs. In detail, NGUARD exploits a combination of supervised and unsupervised methods. Supervised models are utilized to detect game bots in observed patterns according to the training data. Meanwhile, unsupervised solutions are employed to detect clustered game bots and help discovering new bots. The game bot detection framework NGUARD has been implemented and deployed in multiple MMORPG productions in the NetEase Game portfolio, achieving remarkable performance improvement and acceleration compared to traditional methods. Moreover, the framework reveals outstanding robustness for game bots in mutated patterns and even in completely new patterns on account of the design of the auto-iteration mechanism.</p>
-        <p style="margin-left:20px">Paper:<img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/roleaware/roleaware.pdf" style="margin-left:-3px; margin-right: 3px;">roleaware.pdf</a> | Code: <img height="20" src="img/cpp.jpeg" style="margin-right: 3px;margin-left: -3px"><a href="" style="margin-left:-3px; margin-right: 3px;">Coming Soon</a></p>
+        <p style="margin-left:20px">Paper:<img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/nguard/nguard.pdf" style="margin-left:-3px; margin-right: 3px;">nguard.pdf</a> </p>
     </div>
     
-    <div class="container">
-        <div class="page-header">
-            <h4>Inferring User Demographics and Social Strategies in Mobile Social Networks (KDD'14)</h4>
-            <p style="margin:3px;">Yuxiao Dong, Yang Yang, Jie Tang, Yang Yang, Nitesh V. Chawla </p>
-        </div>
-        <img width="350" src="works/whoami/overall.png" align="left" style="margin-left:20px;margin-right:20px">
-        <p>
-        Demographics are widely used in marketing to characterize different
-types of customers. However, in practice, demographic information
-such as age, gender, and location is usually unavailable due
-to privacy and other reasons. In this paper, we aim to harness the
-power of big data to automatically infer users' demographics based
-on their daily mobile communication patterns.
-        Our study is based on a real-world large mobile network of more than 7,000,000 users and over 1,000,000,000 communication records (CALL and SMS). We discover several interesting social strategies that mobile users frequently use to maintain their social connections. First, young people are very active in broadening their social circles, while seniors tend to keep close but more stable connections. Second, female users put more attention on cross-generation interactions than male users, though interactions between male and female users are frequent. Third, a persistent same-gender triadic pattern over one’s lifetime is discovered for the first time, while more complex opposite-gender triadic patterns are only exhibited among young people.
-        </p>
-        <p style="margin-left:20px">Paper:<img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/whoami/whoami.pdf" style="margin-left:-3px; margin-right: 3px;">WhoAmI.pdf</a> | Code: <img height="20" src="img/cpp.jpeg" style="margin-right: 3px;margin-left: -3px"><a href="works/whoami/whoami.zip" style="margin-left:-3px; margin-right: 3px;">WhoAmI.zip</a></p>
-    </div>
-
-
-    <div class="container">
-        <div class="page-header">
-            <h4>How Do Your Friends on Social Media Disclose Your Emotions? (AAAI'14)</h4>
-            <p style="margin:3px;">Yang Yang, Jia Jia, Shumei Zhang, Boya Wu, Qicong Chen, Juanzi Li, and Jie Tang</p>
-        </div>
-        <img width="350" src="works/emotion/overall.jpg" align="left" style="margin-left:20px;margin-right:20px">
-        <p>Mining emotions hidden in images has attracted significant interest, in particular with the rapid development of social networks. The emotional impact is very important for understanding the intrinsic meanings of images. To understand the emotional impact from images, one interesting question is: How does social effect correlate with the emotion expressed in an image? Specifically, can we leverage friends interactions (e.g., discussions) related to an image to help discover the emotions? In this paper, we formally formalize the problem and propose a novel emotion learning method by jointly modeling images posted by social users and comments added by friends. One advantage of the model is that it can distinguish those comments that are closely related to the emotion expression for an image from other irrelevant ones. Experiments on an open Flickr dataset show that the proposed model can significantly improve (+37.4% by F1) the accuracy for inferring emotions from images. More interestingly, we found that half of the improvements are due to interactions between 1% of the closest friends.</p>
-        <p style="margin-left:20px">Paper:<img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/emotion/emotion.pdf" style="margin-left:-3px; margin-right: 3px;">emotion.pdf</a> | Code: <img height="20" src="img/cpp.jpeg" style="margin-right: 3px;margin-left: -3px"><a href="works/emotion/EmotionLearn.zip" style="margin-left:-3px; margin-right: 3px;">EmotionLearn.zip</a></p>
-    </div>
-
-    <div class="container">
-        <div class="page-header">
-            <h4>Forecasting Potential Diabetes Complications (AAAI'14)</h4>
-            <p style="margin:3px;">Yang Yang, Walter Luyten, Lu Liu, Marie-Francine Moens, Jie Tang, and Juanzi Li</p>
-        </div>
-        <img width="350" src="works/complication/model.jpg" align="left" style="margin-left:20px;margin-right:20px">
-        <p>Diabetes complications often afflict diabetes patients seriously: over 68% of diabetes-related mortality is caused by diabetes complications. In this paper, we study the problem of automatically diagnosing diabetes complications from patients' lab test results. The objective problem has two main challenges: 1) feature sparseness: a patient only takes 1.26% lab tests on average, and 65.5% types of lab tests are taken by less than 10 patients; 2) knowledge skewness: it lacks comprehensive detailed domain knowledge of association between diabetes complications and lab tests.  To address these challenges, we propose a novel probabilistic model called Sparse Factor Graph Model (SparseFGM). SparseFGM projects sparse features onto a lower-dimensional latent space, which alleviates the problem of sparseness. SparseFGM is also able to capture the associations between complications and lab tests, which help handle the knowledge skewness.We evaluate the proposed model on a large collections of real medical records. SparseFGM outperforms (+20% by F1) baselines significantly and gives detailed associations between diabetes complications and lab tests. </p>
-        <p style="margin-left:20px">Paper:<img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/complication/complication.pdf" style="margin-left:-3px; margin-right: 3px;">complication.pdf</a> | Code: <img height="20" src="img/cpp.jpeg" style="margin-right: 3px;margin-left: -3px"><a href="works/complication/sparsefgm.zip" style="margin-left:-3px; margin-right: 3px;">SparseFGM.zip</a></p>
-
-    </div>
-
-    <div class="container">
-        <div class="page-header">
-            <h4>Mining Competitive Relationships by Learning across Heterogeneous
-Networks (CIKM'12)</h4>
-            <p style="margin:3px;">Yang Yang, Jie Tang, Jacklyne Keomany, Yanting Zhao, Ying Ding, Juanzi Li, and Liangwei Wang</p>
-        </div>
-        <img width="300" src="works/competitive/example.jpg" align="left" style="margin-left:50px;margin-right:50px">
-        <p> Detecting and monitoring competitors is fundamental to a company to stay ahead in the global market. Existing studies mainly focus on mining competitive relationships within a single data source, while competing information is usually distributed in multiple networks. How to discover the underlying patterns and utilize the heterogeneous knowledge to avoid biased aspects in this issue is a challenging problem. </p>
-        <p>In this paper, we study the problem of mining competitive relationships by learning across heterogeneous networks. We use Twitter and patent records as our data sources and statistically study the patterns behind the competitive relationships. We find that the two networks exhibit different but complementary patterns of competitions. Our proposed model, Topical Factor Graph Model (TFGM), defines a latent topic layer to bridge the two networks and learns a semi-supervised learning model to classify the relationships between entities (e.g., companies or products). </p>
-        <p>We test the proposed model on two real data sets and the experimental results validate the effectiveness of our model, with an average of +46% improvement over alternative methods.</p>
-        <br>
-        <p style="margin-left:20px">Paper:<img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/competitive/competitive.pdf" style="margin-left:-3px; margin-right: 3px;">competitive.pdf</a> | Code: <img height="20" src="img/cpp.jpeg" style="margin-right: 3px;margin-left: -3px"><a href="works/competitive/TFGM.zip" style="margin-left:-3px; margin-right: 3px;">TopicFGM.zip</a></p>
-    </div>
-
+  
 <br>
 
     <a name="publication"></a>
@@ -151,63 +98,57 @@ Networks (CIKM'12)</h4>
     <div class="container">
         <div class="page-header">
             <h2>Full Publication List</h2>
-            <h4>(in chronological order)</h4>
         </div>
-        <li style="margin:10px">Yang Yang, Jie Tang, Cane Wing-Ki Leung, Yizhou Sun, Qicong Chen, Juanzi Li, and Qiang Yang. 
-        Modeling Social Role-Aware information Diffusion. 
-        In <i> Proceedings of the 29th AAAI Conference on Artificial Intelligence </i>
-            (<a href="http://www.aaai.org/Conferences/AAAI/aaai15.php">AAAI'15</a>). 
-            [<a href="works/roleaware/roleaware.pdf">PDF</a>] 
-            [<a href="http://arnetminer.org/role-aware-diffusion">Data&amp;Code</a>]
+        <li style="margin:10px">Jianrong Tao*, Jiarong Xu*, Linxia Gong, Yifu Li, Changjie Fan and Zhou Zhao (*: Equal Contribution).
+        NGUARD: A Game Bot Detection Framework for NetEase MMORPGs.
+        In <i>Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD'18).</i>
+            [<a href="works/nguard/nguard.pdf">PDF</a>] 
         </li>
-        <li style="margin:10px">Yuxiao Dong, Yang Yang, Jie Tang, Yang Yang, and Nitesh V. Chawla. 
-        Inferring User Demographics and Social Strategies in Mobile Social Networks.
-            In <i>Proceedings of the Twentyth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</i>
-            (<a href="http://www.kdd.org/kdd2014/">KDD'14</a>). 
-            [<a href="works/whoami/whoami.pdf">PDF</a>] 
-            [<a href="http://arnetminer.org/demographic">Data&amp;Code</a>]
+ 
+         <li style="margin:10px">Yiren Shen, Xiaoxian Ou, Jiarong Xu, Guanglin Zhang, Lin Wang and Dapeng Li.
+        Optimal energy storage management for microgrids with ON/OFF co-generator: A two-time-scale approach. 
+        In <i>Proceedings of the 3rd IEEE Conference on Signal and Information Processing (GlobalSIP'15).</i>
+            [<a href="works/others/energy.pdf">PDF</a>] 
+        </li>  
+
+         <li style="margin:10px">Chen Chen, Xueyuan Li, Ye Yang, Jiarong Xu, Zuwei Liao, Xinggao Liu and Jinshui Chen and Jiangang Lu.
+        Parameter Self-Tuning of SISO Compact-Form Model-Free Adaptive Controller based on Neural Network with System Error Set as Input.
+        In <i>Proceedings of the 12th Asian Control Conference (ASCC'19).</i>
+            [<a href="works/others/siso.pdf">PDF</a>] 
+        </li>  
+
+         <li style="margin:10px">Ye Yang, Jinhou Han, Chen Chen, Jiarong Xu, Zuwei Liao, Xinggao Liu, Jinshui Chen and Jiangang Lu.
+        A PSO-LP Cooperative Algorithm for Mixed Integer Nonlinear Programming.
+        In <i>Proceedings of the 12th Asian Control Conference (ASCC'19).</i>
+            [<a href="works/others/psolp.pdf">PDF</a>] 
+        </li>  
+
+         <li style="margin:10px">Jiarong Xu, Chen Chen, Ye Yang and Jiangang Lu.
+        Dynamic Modeling of Wax Hydrogenation Unit Based on LSTM-DNN Deep Learning.
+        In <i>Proceedings of the 29th Chinese Process Control Conference (CPCC'19).</i>
+            [<a href="works/others/psolp.pdf">PDF</a>] 
+        </li>  
+
+         <li style="margin:10px">Jiarong Xu and Cao Yu.
+        A Particle Swarm Algorithm with Frog Leaping Behavior for designing optimal PID controller. 
+        In <i>Proceedings of Chinese Process Automation Congress (CAC'15).</i>
+            [<a href="works/others/psolp.pdf">PDF</a>] 
+        </li>  
+
+    </div>
+    <a name="activities"></a>
+
+    <div class="container">
+        <div class="page-header">
+            <h2>Academic Activities</h2>
+        </div>
+        <li style="margin:10px">
+        Conference PC Members: China Conference on Knowledge Graph and Semantic Computing (CCKS 2018)
         </li>
-        <li style="margin:10px">Yang Yang, Jia Jia, Shumei Zhang, Boya Wu, Qicong Chen, Juanzi Li, Chunxiao Xing, and Jie Tang.
-	        How Do Your Friends on Social Media Disclose Your Emotions?
-            In <i>Proceedings of the 28th AAAI Conference on Artificial Intelligence</i>
-            (<a href="http://www.aaai.org/Conferences/AAAI/aaai14.php">AAAI'14</a>). 
-            [<a href="publications/AAAI14-Yang-et-al-Social-Emotion.pdf">PDF</a>] 
-            [<a href="http://arnetminer.org/emotion">Data&amp;Code</a>]
-        </li>
-        <li style="margin:10px">Yang Yang, Walter Luyten, Lu Liu, Marie-Francine Moens, Jie Tang, and Juanzi Li.
-	        Forecasting Potential Diabetes Complications.
-        In <i>Proceedings of the 28th AAAI Conference on Artificial Intelligence</i>
-            (<a href="http://www.aaai.org/Conferences/AAAI/aaai14.php">AAAI'14</a>). 
-            [<a href="publications/AAAI14-Yang-et-al-Diabetes-Pred-by-Sparse-Factor-Graph.pdf">PDF</a>] 
-            [<a href="http://arnetminer.org/diabetes">Data&amp;Code</a>]
-        </li>
-        <li style="margin:10px">Yang Yang, Jianfei Wang, Yutao Zhang, Wei Chen, Jing Zhang, Honglei Zhuang, Zhilin Yang, Bo Ma, Zhanpeng Fang, Sen Wu, Xiaoxiao Li, Debing Liu, and Jie Tang. 
-	SAE: Social Analytic Engine for Dynamic Networks. 
-In <i>Proceedings of the Ninteenth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</i>
-(<a href="http://kdd.org/kdd2013/">KDD'13</a>, demo paper). pp. 1502-1505.
-[<a href="publications/KDD13-Yang-et-al-Social-Analytic-Engine.pdf">PDF</a>] 
-[<a href="publications/KDD13-poster-SAE.pdf">Poster</a>]
-        </li>
-        <li style="margin:10px">Yang Yang, Jie Tang, Jacklyne Keomany, Yanting Zhao, Ying Ding, Juanzi Li, and Liangwei Wang.
-	Mining Competitive Relationships by Learning across Heterogeneous Networks. 
-	In <i>Proceedings of the Twenty-First Conference on
-Information and Knowledge Management</i>
-(<a href="http://www.cikm2012.org/">CIKM'12</a>). pp. 1432-1441.
-[<a href="publications/CIKM12-Yang-et-al-Mining-Competitive-Relationships.pdf">PDF</a>]
-        </li>
-        <li style="margin:10px">Jie Tang, Bo Wang, Yang Yang, Po Hu, Yanting Zhao, Xinyu Yan, Bo Gao, Minlie Huang, Peng Xu, Weichang Li, and Adam K. Usadi. 
-	PatentMiner: Topic-driven Patent Analysis and Mining. 
-In <i>Proceedings of the Eighteenth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</i>
-(<a href="http://kdd2012.sigkdd.org/">KDD'12</a>). pp. 1366-1374.
-[<a href="publications/KDD12-Tang-et-al-PatentMiner.pdf">PDF</a>]
-[<a href="publications/Jie Tang-Patentminer.pdf">Slides</a>]
-[<a href="publications/KDD2012-Tang-et-al-Patentminer.pdf">Poster</a>]
-[<a href="http://pminer.org">System</a>]
-[<a href="publications/kdd12-patentminer.mov">Video</a>]
-        </li>
-        <li style="margin:10px">Tieyun Qian, Yang Yang, Shuo Wang. Refining Graph Partitioning for Social Network Clustering. In <i> Proceeding of the Eleventh International Conference on Web Information System Engineering </i> (<a href="http://conference.cs.cityu.edu.hk/wise2010/">WISE'10</a>). pp. 77-90. 
-        [<a href="works/others/graphpartition.pdf">PDF</a>]
-        </li>
+    </div>
+
+    <hr>
+
     </div>
     <a name="award"></a>
 
@@ -216,22 +157,15 @@ In <i>Proceedings of the Eighteenth ACM SIGKDD International Conference on Knowl
             <h2>Selected Awards</h2>
         </div>
         <li style="margin:10px"> 
-        2011, awarded best graduation thesis of Wuhan University
+        2019, Best Poster Award, Singapore, AI Summer School
+        <li style="margin:10px"> 
+        2016, Best graduation thesis of Donghua University
         </li>
         <li style="margin:10px">
-        2009, ACM International Collegiate Programming Contest, Asia Regional, 2 gold medals
+        2016, Outstanding Graduates of Shanghai
         </li>
         <li style="margin:10px">
-        2009, Champion of Citi Financial IT Application Competition
-        </li>
-        <li style="margin:10px">
-        2009, awarded “Ten Outstanding Young People of Wuhan University”
-        </li>
-        <li style="margin:10px">
-        2009, awarded “Ten Great Students of Luo-jia Mountain”
-        </li>
-        <li style="margin:10px">
-        2008, ACM International Collegiate Programming Contest, Asia Regional, 3 gold medals
+        2015, National Scholarship, China
         </li>
     </div>
 
@@ -240,7 +174,7 @@ In <i>Proceedings of the Eighteenth ACM SIGKDD International Conference on Knowl
     
 
     <footer>
-        <p style="margin:10px;">Created by <a href=""> Yang Yang </a>, using a design from <a href="http://getbootstrap.com/"> bootstrap </a></p>
+        <p style="margin:10px;">Created by <a href=""> Jiarong Xu </a>, using a design from <a href="http://getbootstrap.com/"> bootstrap </a></p>
     </footer>
     </div> <!-- /container -->
 
