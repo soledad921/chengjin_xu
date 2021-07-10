@@ -98,18 +98,29 @@
         </div>
       
         <div class="page-header">
-            <h4>Network Denoising</h4>
+            <h4>Robust Graph Models</h4>
         </div>
         <img width="450" src="works/enet/enet.gif" align="left" style="margin-left:20px;margin-right:20px">
-        <p>Network data in real-world tends to be error-prone due to incomplete sampling, imperfect measurements, etc.; this in turn results in inaccurate results when performing network analysis or modeling, such as node classiﬁcation and link prediction, on these ﬂawed networks. We aim to reconstruct a reliable network from a ﬂawed, undirected, unweighted network, a process referred to network enhancement. More speciﬁcally, network enhancement aims to detect the noisy links that are observed in the network but should not exist in the real world, as well as to predict the missing links that do indeed exist in the real world yet remain unobserved. ([<a href="works/enet/tkde2020_robust_xu.pdf">Xu et al, TKDE'20</a>, <a href="https://github.com/galina0217/E-Net">Code</a>]).</p>
-<!-- 
-        <div class="page-header">
-            <h4>Game Bot Detection Framework</h4>
-        </div>
-        <img width="350" src="works/nguard/model.png" align="left" style="margin-left:20px;margin-right:20px">
-        <p>Game bots are automated programs that assist cheating users and enable them to obtain huge superiority, leading to an imbalance in the game ecosystem and the collapse of user interest. Therefore, game bot detection becomes particularly important and urgent. Among many kinds of online games, massively multiplayer online role playing games (MMORPGs), such as World of Warcraft and AION, provide immersive gaming experience and attract many loyal fans. At the same time, however, game bots in MMORPGs have proliferated in volume and method, evolving with the real-world detection methods and showing strong diversity, leaving MMORPG bot detection efforts extremely difficult. </p>
-        <p>To deal with the fast-changing nature of game bots, we here proposed a generalized game bot detection framework for MMORPGs termed NGUARD, denoting NetEase Games’ Guard. NGUARD takes charge of automatically differentiating game bots from humans for MMORPGs. In detail, NGUARD exploits a combination of supervised and unsupervised methods. Supervised models are utilized to detect game bots in observed patterns according to the training data. Meanwhile, unsupervised solutions are employed to detect clustered game bots and help discovering new bots. The game bot detection framework NGUARD has been implemented and deployed in multiple MMORPG productions in the NetEase Game portfolio, achieving remarkable performance improvement and acceleration compared to traditional methods. Moreover, the framework reveals outstanding robustness for game bots in mutated patterns and even in completely new patterns on account of the design of the auto-iteration mechanism ([<a href="works/nguard/nguard.pdf">Tao and Xu et al, KDD'18</a>];Xu et al, TKDD'20</a>]).</p>
-        <p style="margin-left:20px">Paper:<img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/nguard/nguard.pdf" style="margin-left:-3px; margin-right: 3px;">nguard.pdf</a> </p> -->
+      
+        <p>
+          The study of network data can help us understand some complex real-life phenomena, and can also provide evidence for the human life. While networks can be a double-edged sword. For example, although social networks bring low-cost communication means, they also facilitate the spread of rumours. Accordingly, a slight anomaly in a network is easy to propagate to other neighbors via relational information.
+          
+          The anomaly in networks can be attributed to two aspects. On the one hand, networks in real-world tend to be noisy; on the other hand, there exist malicious attacks in networks. The noise and malicious attacks in a network have given rise to tremendous concerns regarding the utilization of graph models
+          
+          First, to deal with the noise in a network, we propose two network enhancement algorithms against noise, i.e., network denoising agent via reinforcement learning (NetRL, <a href="works/tkde2021_netrl_xu.pdf">Xu et al, TKDE'20</a>) and enhanced network model (E-Net,  <a href="works/enet/tkde2020_robust_xu.pdf">Xu et al, TKDE'20</a>). These two algorithms can help us reconstruct a reliable denoised network from a noisy one. Since the labels of noise are unavailable, NetRL takes advantage of downstream task to guide the network reconstruction process, while E-Net adopts a self-supervised learning method to learn from the network itself. Moreover, by proposing an RWR subgraph extraction mechanism, our model can be scaled up to large networks.
+          
+          Second, we study the model robutness against adversarial attacks. Our work shows that even without any information about the target model, one can still perform effective attacks (<a href="http://arxiv.org/abs/2012.06757.pdf">Xu et al, arxiv'20</a>). To handle the adversarial vulnerability problem, we further propose an unsupervised defense technique to robustify pre-trained deep graph models (<a href="https://arxiv.org/pdf/2012.02486.pdf">Xu et al, arxiv'20</a>)。
+          
+<!--           ([<a href="works/enet/tkde2020_robust_xu.pdf">Xu et al, TKDE'20</a>, <a href="https://github.com/galina0217/E-Net">Code</a>]). -->
+         </p>
+      
+<!--         <p>Network data in real-world tends to be error-prone due to incomplete sampling, imperfect measurements, etc.; this in turn results in inaccurate results when performing network analysis or modeling, such as node classiﬁcation and link prediction, on these ﬂawed networks. 
+          
+          Our research aims to reconstruct a reliable network from a ﬂawed, undirected, unweighted network, a process referred to <i>network enhancement</i>. More speciﬁcally, the goal of network enhancement is to detect the noisy links that are observed in the network but should not exist in the real world, as well as to predict the missing links that do indeed exist in the real world yet remain unobserved. 
+          
+          From one perspective, we turns the network enhancement problem into edge sequences generation, and employ a deep reinforcement learning framework to solve it, which takes advantage of downstream task to guide the network denoising process 
+          
+          ([<a href="works/enet/tkde2020_robust_xu.pdf">Xu et al, TKDE'20</a>, <a href="https://github.com/galina0217/E-Net">Code</a>]).</p> -->
     </div>
 
     <div class="container">
@@ -124,7 +135,7 @@
         <p>Network data in real-world tends to be error-prone due to incomplete sampling, imperfect measurements, etc.; this in turn results in inaccurate results when performing network analysis or modeling, such as node classiﬁcation and link prediction, on these ﬂawed networks. We aim to reconstruct a reliable network from a ﬂawed, undirected, unweighted network, a process referred to network enhancement. More speciﬁcally, network enhancement aims to detect the noisy links that are observed in the network but should not exist in the real world, as well as to predict the missing links that do indeed exist in the real world yet remain unobserved. (Xu et al, TKDD'20 [<a href="https://github.com/galina0217/E-Net">Code</a>]).</p>
  -->
         <div class="page-header">
-            <h4>Game Bot Detection Framework</h4>
+            <h4>Anomaly Detection Framework</h4>
         </div>
         <img width="450" src="works/nguard/human_bot_pattern.png" align="left" style="margin-left:20px;margin-right:20px">
         <!-- <p>Game bots are automated programs that assist cheating users and enable them to obtain huge superiority, leading to an imbalance in the game ecosystem and the collapse of user interest. Therefore, game bot detection becomes particularly important and urgent. Among many kinds of online games, massively multiplayer online role playing games (MMORPGs), such as World of Warcraft and AION, provide immersive gaming experience and attract many loyal fans. At the same time, however, game bots in MMORPGs have proliferated in volume and method, evolving with the real-world detection methods and showing strong diversity, leaving MMORPG bot detection efforts extremely difficult. </p>
