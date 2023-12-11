@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Jiarong Xu - Fudan University">
+    <meta name="description" content="Chengjin Xu - International Digital Economy Academy">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="img/homeicon.png">
+    <link rel="shortcut icon" href="img/AIicon.png">
 
     <title>Chengjin Xu's Homepage</title>
 
@@ -38,7 +38,7 @@
             <span class="icon-bar"></span>
           </button>
           <!-- <img height="50" src="img/sheep2.jpeg" align="left" hspace="6" style="margin-left:-6p;margin-right:20px"> -->
-          <a class="navbar-brand" href="#">Chengjin Xu (许嘉蓉)</a>
+          <a class="navbar-brand" href="#">Chengjin Xu (徐铖晋)</a>
         </div>
         <div class="navbar-collapse collapse">
         <ul class="nav nav-pills pull-right">
@@ -72,10 +72,10 @@
         <p> I am currently an AI research scientist at the Center of AI Finance and Deep Learning, <a href="https://www.idea.edu.cn//">International Digital Economy Academy (IDEA)</a>, Shenzhen. I obtained my Ph.D. degree from the Department of Computer Science at University of Bonn in January 2023, advised by <a href="http://jens-lehmann.org//">Prof. Jens Lehmann</a>. Previously, I obtained my Master and Bachelor degree from Zhejiang University.
   
         </p>
-        <p> My research interests involve large language model (LLM) and knowledge graph (KG), including but not limited to LLM complex reasoning, LLM agents, multi-modal LLM (specifically for table and chart understanding), knowledge-driven LLMs and KG reasoning. </p>
-        <p> xuchengjin {at} idea [dot] edu [dot] cn </p>
+        <p> My research interests involve large language model (LLM) and knowledge graph (KG), including but not limited to LLM reasoning, LLM agents, multi-modal LLM, knowledge-driven LLMs, KG representation learning, KG reasoning, and KG alignment. </p>
+        <!-- <p> xuchengjin {at} idea [dot] edu [dot] cn </p> -->
 
-        <p> I'm looking for self-motivated interns at IDEA (Shenzhen). If you are interested in the above topics, please send me your resume by email.
+        <p> I'm looking for self-motivated interns at IDEA (Shenzhen). If you are interested in the above topics, please send me your resume <a href="mailto:xuchengjin@idea.edu.cn" class="btn-hire">by email</a>.
         </p>
         
 <!--         <p> <u><I> We have open positions for postdoctoral. If interested, 
@@ -93,19 +93,20 @@
         </div>
       
         <div class="page-header">
-            <h4>Robust Graph Models</h4>
+            <h4>Knowledge-driven LLMs</h4>
         </div>
-        <img width="450" src="works/enet/enet.gif" align="left" style="margin-left:20px;margin-right:20px;margin-bottom:20px">
+        <img width="450" src="works/tog/tog.gif" align="left" style="margin-left:20px;margin-right:20px;margin-bottom:20px">
       
         <p>
-          Network data in real-world tends to be error-prone due to incomplete sampling, imperfect measurements or even malicious attacks. This in turn results in inaccurate results when performing network analysis or modeling on these ﬂawed networks.<br><br>
+          LLMs have become indispensable in the field of natural language processing, excelling in various reasoning tasks such as text generation and understanding. Despite their remarkable performance, these models encounter challenges related to explainability, safety, hallucination, out-of-date knowledge, and deep reasoning capabilities, particularly when dealing with knowledge-intensive tasks.<br><br>
           
-          Our research aims to reconstruct a reliable network from a ﬂawed one, a process referred to network enhancement. More specifically, network enhancement aims to detect the noisy links that are observed in the network but should not exist in the real world, as well as to complement the missing links that do indeed exist in the real world yet remain unobserved.<br><br>
+          Our research aims to  delves into the potential of knowledge-driven LLM reasoning as a promising approach to
+          address these limitations. More specifically, knowledge-driven LLM reasoning leverages LLMs to interact with the external enviroment (consisting of a variety of knowledge sources, e.g., KGs, textual corpus, databases, code repositories) and retrieve necessary knowledge to enhance the understanding and generation
+          capabilities of LLMs, providing them the ability to reason over complex questions or tasks.<br><br>
           
-          From one perspective, we turns the network enhancement problem into edge sequences generation, and employ a deep reinforcement learning framework to solve it, which takes advantage of downstream task to guide the network denoising process (NetRL, <a href="works/tkde2021_netrl_xu.pdf">Xu et al, TKDE'21</a>). 
-          From another perspective, we construct a self-supervised learning framework that identifies missing links and nosiy links simultaneously by leveraging the mutual influence of them (E-Net, <a href="works/enet/tkde2020_robust_xu.pdf">Xu et al, TKDE'20</a>).<br><br>
+          Among various knowledge sources, KGs offer structured, explicit,and editable representations of knowledge, presenting a complementary strategy to mitigate the limitations of LLMs. Thus, we first focus on the usage of KGs as external knowledge sources for LLMs and propose an algorithmic framework “Think-on-Graph” (meaning: LLMs “Think” along the reasoning paths “on” knowledge “graph” step-by-step, abbreviated as <a href="https://arxiv.org/pdf/2307.07697.pdf">ToG (under review in ICLR'24 with scores of 6,6,8,8)</a>). Using beam search, ToG allows LLM to dynamically explore a number of reasoning paths in KG and make decisions accordingly. Moreover, we also conduct a <a href="https://arxiv.org/pdf/2310.04835.pdf">survey</a> on the revolution of KGs and provide new perspective on the combination of LLMs and different types of KGs.<br><br>
           
-          Furthermore, we study the model robutness against adversarial attacks. Our work shows that even without any information about the target model, one can still perform effective attacks (<a href="works/11209.XuJ.pdf">Xu et al, AAAI'22</a>). To handle the adversarial vulnerability problem, we further propose an unsupervised defense technique to robustify pre-trained deep graph models (<a href="works/11849.XuJ.pdf">Xu et al, AAAI'22</a>).
+          In the future, we will explore new approaches of knowledge-driven LLM reasoning that can incorporate different type of knowledge sources hybridly, as well as new KG types that can be easier to combined with LLMs than existing KGs. Besides, multi-modal LLMs (specifically for chart and table understanding), LLM agents for complex reasoning tasks are also our research interests.
           
 <!--           ([<a href="works/enet/tkde2020_robust_xu.pdf">Xu et al, TKDE'20</a>, <a href="https://github.com/galina0217/E-Net">Code</a>]). -->
          </p>
@@ -131,181 +132,197 @@
         <p>Network data in real-world tends to be error-prone due to incomplete sampling, imperfect measurements, etc.; this in turn results in inaccurate results when performing network analysis or modeling, such as node classiﬁcation and link prediction, on these ﬂawed networks. We aim to reconstruct a reliable network from a ﬂawed, undirected, unweighted network, a process referred to network enhancement. More speciﬁcally, network enhancement aims to detect the noisy links that are observed in the network but should not exist in the real world, as well as to predict the missing links that do indeed exist in the real world yet remain unobserved. (Xu et al, TKDD'20 [<a href="https://github.com/galina0217/E-Net">Code</a>]).</p>
  -->
         <div class="page-header">
-            <h4>Anomaly Detection Framework</h4>
+            <h4>Temporal Knowledge Graph Embedding</h4>
         </div>
-        <img width="450" src="works/nguard/human_bot_pattern.png" align="left" style="margin-left:20px;margin-right:20px">
+        <img width="450" src="works/tkgr/tkgr.png" align="left" style="margin-left:20px;margin-right:20px">
         <!-- <p>Game bots are automated programs that assist cheating users and enable them to obtain huge superiority, leading to an imbalance in the game ecosystem and the collapse of user interest. Therefore, game bot detection becomes particularly important and urgent. Among many kinds of online games, massively multiplayer online role playing games (MMORPGs), such as World of Warcraft and AION, provide immersive gaming experience and attract many loyal fans. At the same time, however, game bots in MMORPGs have proliferated in volume and method, evolving with the real-world detection methods and showing strong diversity, leaving MMORPG bot detection efforts extremely difficult. </p>
         <p>To deal with the fast-changing nature of game bots, we here proposed a generalized game bot detection framework for MMORPGs termed NGUARD, denoting NetEase Games’ Guard. NGUARD takes charge of automatically differentiating game bots from humans for MMORPGs. In detail, NGUARD exploits a combination of supervised and unsupervised methods. Supervised models are utilized to detect game bots in observed patterns according to the training data. Meanwhile, unsupervised solutions are employed to detect clustered game bots and help discovering new bots. The game bot detection framework NGUARD has been implemented and deployed in multiple MMORPG productions in the NetEase Game portfolio, achieving remarkable performance improvement and acceleration compared to traditional methods. Moreover, the framework reveals outstanding robustness for game bots in mutated patterns and even in completely new patterns on account of the design of the auto-iteration mechanism ([<a href="works/nguard/nguard.pdf">Tao and Xu et al, KDD'18</a>];[<a href="works/nguard/nguard_plus.pdf">Xu et al, TKDD'20</a>]).</p> -->
-        <p>We propose a general game bot detection framework for massively multiplayer online role playing games termed NGUARD+ (denoting NetEase Games’ Guard), which captures user patterns in order to identify game bots from player behavior sequences. NGUARD+ mainly employs attention-based methods to automatically differentiate game bots from humans. We provide a combination of supervised and unsupervised methods for game bot detection to detect game bots and new type of game bots even when the labels of game bots are limited ([<a href="works/nguard/nguard.pdf">Tao and Xu et al, KDD'18</a>];[<a href="works/nguard/nguard_plus.pdf">Xu et al, TKDD'20</a>]).</p>
+        <p>Temporal Knowledge Graph (TKG) is structured as a multi-relational directed graph where each edge stands for an occurred fact. TKG consists of a large number of facts in the form of quadruple (subject entity, relation, object entity, timestamp) , or (s, r, o, t) for short, where entities (as nodes) are connected via relations with timestamps (as edges).<br><br>
+
+        Many TKGs are human-created or automatically constructed from semi-structured and unstructured text, suffering the problem of incompleteness, i.e. many missing links among entities. This weakens the expressive ability of TKGs and restricts the range of TKG-based applications. To address this isse, we propose multiple TKG embedding model, including <a href="https://arxiv.org/pdf/1911.07893.pdf">ATiSE (ISWC'2020 best student paper award nominee)</a>, <a href="https://aclanthology.org/2020.coling-main.139.pdf">TeRo (COLING'20)</a>, <a href="https://aclanthology.org/2021.naacl-main.202.pdf">TeLM (NAACL'21)</a>, <a href="https://link.springer.com/chapter/10.1007/978-3-031-43418-1_36">TRE (ECML'23)</a> and <a href="https://ieeexplore.ieee.org/abstract/document/9713947">TGeomE (TKDE)</a>, for predict missing links on KGs by learning low-dimensional representations for a set of entities, relations and timestamps. We also propose the first query embedding framework <a href="https://openreview.net/pdf?id=oaGdsgB18L">TFLEX (NeurIPS'23)</a> which can model first-order logic and temporal logic in KG embedding spaces.<br><br>
+
+        Since knowledge of TKGs is ever-changing and the temporal information makes TKGs highly dynamic. In the real world scenario, the emergence of new entities/relations in the development process over time creates the need for TKG reasoning in the inductive setting, where entities/relations in training TKGs do not completely overlap entities/relations in testing KGs. Thus, we propose <a href="https://arxiv.org/pdf/2302.05640.pdf">MTKGE (WWW'23)</a> and <a href="https://arxiv.org/pdf/2304.04717.pdf">SST-BERT (SIGIR'23)</a> which both can effectively model new emerging entities for inductive TKG reasoning. <br><br>
+
+        Besides TKG reasoning, TKG alignment, which aims to finding equivalent entities between TKGs, can also benefits the completenss of TKGs by fusing TKGs. In our work <a href="https://aclanthology.org/2021.emnlp-main.709.pdf">TEA-GNN (EMNLP'2021)</a>, the task of TKG alignment was introduced for the first time. Follow-up works include <a href="https://www.researchgate.net/profile/Chengjin-Xu/publication/360180258_Time-aware_Entity_Alignment_using_Temporal_Relational_Attention/links/63755c2d54eb5f547cda302f/Time-aware-Entity-Alignment-using-Temporal-Relational-Attention.pdf">TREA (WWW'22)</a> and <a href="https://arxiv.org/pdf/2304.03468.pdf">Simple-HHEA (under review in WWW'24 with highly positive review scores)</a>. In these papers, we propose different approaches and datasets, carefully designed for TKG alignment.
+
+
+        </p>
 <!--         <p style="margin-left:20px">Paper:<img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/nguard/nguard.pdf" style="margin-left:-3px; margin-right: 3px;">nguard.pdf</a> <img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/nguard/nguard_plus.pdf" style="margin-left:-3px; margin-right: 3px;">nguard+.pdf</a> </p> -->
     </div>
 
+
 <br>
 
-    <a name="publication"></a>
 
+  <a name="news"></a>
+
+  <div class="container">
+      <div class="page-header">
+          <h2>News</h2>
+      </div>
+      <font size="3">
+        [2023.11] <a href="https://arxiv.org/pdf/2307.07697.pdf">ToG</a> was reported by <a href="https://wap.peopleapp.com/article/7267174/7106600">人民日报</a> and <a href="https://mp.weixin.qq.com/s/NsQIZoHlgXq80FlixuI9sQ">新智元</a> in Wechat. <br>
+        [2023.10] One paper was accepted to <a href="https://2023.emnlp.org/">EMNLPS'23</a>. <br>
+        [2023.09] <a href="https://openreview.net/pdf?id=oaGdsgB18L">TFLEX</a> was accepted to <a href="https://nips.cc/">NeurIPS'23</a>. <br>
+        [2023.07] <a href="https://dl.acm.org/doi/abs/10.1145/3581783.3612151">XGEA</a> was accepted to <a href="https://www.acmmm2023.org/">ACM MM'23</a>. <br>
+        [2023.07] <a href="https://www.researchgate.net/publication/374310588_Task-Sensitive_Discriminative_Mutual_Attention_Network_for_Few-Shot_Learning">TDMA</a> was accepted to <a href="https://ecai2023.eu/">ECAI'23</a>. <br>
+        [2023.06] <a href="https://link.springer.com/chapter/10.1007/978-3-031-43418-1_36">TRE</a> was accepted to <a href="https://2023.ecmlpkdd.org/">ECML'23</a>. <br>
+        [2023.05] <a href="https://ieeexplore.ieee.org/abstract/document/9713947">TGeomE</a> was officially published at <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69">TKDE</a>. <br>
+        [2023.04] <a href="https://arxiv.org/pdf/2304.04717.pdf">SST-BERT</a> was accepted to <a href="https://sigir.org/sigir2023/">SIGIR'23</a>. <br>
+        [2023.02] I officially joined the Center of AI Finance and Deep Learning at <a href="https://www.idea.edu.cn//">International Digital Economy Academy (IDEA)</a> as an AI research scientist. <br>
+        [2023.01] I obtained my Ph.D. from the Department of Computer Science at University of Bonn. <br>
+        [2023.01] <a href="https://arxiv.org/pdf/2302.05640.pdf">MTKGE</a> was accepted to <a href="https://www2023.thewebconf.org/">WWW'23</a>. <br>
+        </font>
+  </div>
+
+
+    <a name="publication"></a>
     <div class="container">
         <div class="page-header">
             <h2>Selected Publication List</h2>
         </div>
 
-      
+        <font size="3">
+        See full list at <a href="https://scholar.google.com/citations?hl=en&user=sIts5VgAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a>. (*equal contribution, #corresponding author)<br><br>
+      </font>
+        
         <font size="3">
             <b>2023</b>
         </font>
       
        <li style="margin:10px">
-        <b>Jiarong Xu</b>, Renhong Huang, Xin Jiang, Yuxuan Cao, Carl Yang, Chunping Wang, and Yang Yang.
-        Better with Less: A Data-Active Perspective on Pre-Training Graph Neural Networks.
-         In <i>Proceedings of the 37th Conference on Neural Information Processing System  (NeurIPS’23).</i> 
-         [<a target="_blank" href="works/nips23.pdf">PDF</a>] [<a href="https://github.com/galina0217/APT">Code</a>]
+        Xueyuan Lin, Haihong E#, <b>Chengjin Xu</b>#, Gengxian Zhou, Haoran Luo, Tianyi Hu, Fenglong Su, Ningyuan Li, Mingzhi Sun
+        TFLEX: Temporal Feature-Logic Embedding Framework for Complex Reasoning over Temporal Knowledge Graph.
+         In <i>Proceedings of the 37th Conference on Neural Information Processing System  (NeurIPS'23).</i> 
+         [<a target="_blank" href="https://openreview.net/pdf?id=oaGdsgB18L">PDF</a>] [<a href="https://github.com/LinXueyuanStdio/TFLEX">Code</a>]
         </li> 
       
        <li style="margin:10px">
-        Yuxuan Cao*, <b>Jiarong Xu</b>*#, Carl Yang, Jiaan Wang, Yunchao Mercer Zhang, Chunping Wang, Lei Chen, and Yang Yang.
-        When to Pre-Train Graph Neural Networks? From Data Generation Perspective!
-          In <i>Proceedings of the 29th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD'23). </i> 
-          [<a target="_blank" href="works/w2pgnn.pdf">PDF</a>] [<a href="https://github.com/caoyxuan/W2PGNN">Code</a>]
-          (*: equal contribution, #: corresponding author)
+        Baogui Xu*, <b>Chengjin Xu</b>*, Bing Su.
+        Cross-Modal Graph Attention Network for Entity Alignment.
+          In <i>The 31st ACM International Conference on Multimedia (ACM MM'23). </i> 
+          [<a target="_blank" href="https://dl.acm.org/doi/abs/10.1145/3581783.3612151">Link</a>] 
         </li> 
       
-        <li style="margin:10px"><b>Jiarong Xu</b>, Yang Yang, Shiliang Pu, Yao Fu, Jun Feng, Weihao Jiang, Jiangang Lu and Cunping Wang.
-        NetRL: Task-aware Network Denoising via Deep Reinforcement Learning. 
-        In <i>IEEE Transactions on Knowledge and Data Engineering (TKDE), 2023.</i>  [<a href="works/tkde2021_netrl_xu.pdf">PDF</a>] [<a href="https://github.com/galina0217/NetRL">Code</a>]
+        <li style="margin:10px">
+        Zhongwu Chen, <b>Chengjin Xu</b>#, Fenglong Su#, Zhen Huang#, Yong Dou.
+        Incorporating Structured Sentences with Time-enhanced BERT for Fully-inductive Temporal Relation Prediction.
+        In <i>The 46th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR'23).</i>  [<a href="https://arxiv.org/pdf/2304.04717.pdf">PDF</a>]
         </li>
       
        <li style="margin:10px">
-        Haoyu Kuang, <b>Jiarong Xu</b>#, Haozhe Zhang, Zuyu Zhao, Qi Zhang, Xuanjing Huang, and Zhongyu Wei#.
-        Unleashing the Power of Language Models in Text-Attributed Graph.
-          In <i>Proceedings of the 2023 Conference on  Empirical Methods in Natural Language Processing (EMNLP’23 Findings). </i> 
-         (#: corresponding author)
+        Zhongwu Chen, <b>Chengjin Xu</b>#, Fenglong Su#, Zhen Huang#, Yong Dou.
+        Meta-Learning Based Knowledge Extrapolation for Temporal Knowledge Graph.
+          In <i> Proceedings of the Web Conference 2023 (WWW’23). </i> [<a href="https://arxiv.org/pdf/2302.05640.pdf">PDF</a>]
         </li> 
 
+
+        <li style="margin:10px">
+        Zhongwu Chen, <b>Chengjin Xu</b>#, Fenglong Su#, Zhen Huang#, Yong Dou.
+        Temporal Extrapolation and Knowledge Transfer for Lifelong Temporal Knowledge Graph Reasoning.
+          In <i> Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing (EMNLP’23 Findings). </i>
+        </li> 
       
         <li style="margin:10px">
-        Ruoxue Ma, <b>Jiarong Xu</b>#, Xinnong Zhang, Haozhe Zhang, Zuyu Zhao, Qi Zhang, Xuanjing Huang, and Zhongyu Wei#.
-        One-Model-Connects-All: A Unified Graph Pre-Training Model for Online Community Modeling.
-          In <i>Proceedings of the 2023 Conference on  Empirical Methods in Natural Language Processing (EMNLP’23 Findings). </i> 
-          (#: corresponding author)
+          Bowen Song, <b>Chengjin Xu</b>, Kossi Amouzouvi, Maocai Wang#, Jens Lehmann, Sahar Vahdati
+          Distinct Geometrical Representations for Temporal and Relational Structures in Knowledge Graphs.
+          In <i>European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases 2023 (ECML’23). </i> 
+          [<a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-031-43418-1_36">Link</a>] 
+        </li>
+
+
+        <li style="margin:10px">
+          Baogui Xu, <b>Chengjin Xu</b>, Bing Su.
+          Task-sensitive Discriminative Mutual Attention Network for Few-shot Learning.
+          In <i> The European Conference on Artificial Intelligence 2023 (ECAI’23). </i> 
+          [<a href="https://www.researchgate.net/publication/374310588_Task-Sensitive_Discriminative_Mutual_Attention_Network_for_Few-Shot_Learning">PDF</a>]
         </li>
 
       
         <li style="margin:10px">
-        Taoran Fang, Zhiqing Xiao, Chunping Wang, <b>Jiarong Xu</b>, Xuan Yang, and Yang Yang.
-        DropMessage: Unifying Random Dropping for Graph Neural Networks.
-          In <i>Proceedings of the 37th Conference on Artificial Intelligence (AAAI'23). </i> 
-          [<a target="_blank" href="http://yangy.org/works/gnn/AAAI23_DropMessage.pdf">PDF</a>]
-          <b>(Distinguished Paper Award)</b>
+          Xuhui Jiang, Yinghan Shen, Yuanzhuo Wang, Huawei Shen, <b>Chengjin Xu</b>, Shengjie Ma.
+          Meta-Path based Social Relation Reasoning in A Deep and Robust Way.
+          In <i>The 28th International Conference on Database Systems for Advanced Applications (DASFAA’23). </i> 
+          [<a target="_blank" href="https://dl.acm.org/doi/abs/10.1145/3581783.3612151">Link</a>] 
+
         </li> 
  
       
         <li style="margin:10px">
-        Xinke Jiang, Zidi Qin, <b>Jiarong Xu</b>, and Xiang Ao.
-       Incomplete Graph Learning via Attribute-Structure Decoupled Variational Auto-Encoder.
-          In <i>Proceedings of the 17th ACM International Conference on Web Search and Data Mining (WSDM'23). </i> 
+          Fenglong Su, <b>Chengjin Xu</b>#, Han Yang, Zhongwu Chen, Ning Jing.
+        Iterative Neural Entity Alignment with Cross-modal Supervision.
+          In <i> Information Processing and Management, 2023. </i> 
+          [<a target="_blank" href="https://www.sciencedirect.com/science/article/abs/pii/S0306457322002758">Link</a>] 
         </li> 
         
-    
         <li style="margin:10px">
-       Siyuan Wang, Zhongyu Wei, <b>Jiarong Xu</b>, Taishan Li, and Zhihao Fan.
-       Unifying Structure Reasoning and Language Pre-training for Complex Reasoning Tasks.
-          In <i>IEEE/ACM Transactions on Audio, Speech and Language Processing (TASLP), 2023. </i> 
-           [<a href="works/wang2023.pdf">PDF</a>] 
-        </li> 
-
-      
-      
-        <li style="margin:10px">
-        Jiaan Wang, Fandong Meng, Yunlong Liang, Tingyi Zhang,  <b>Jiarong Xu</b>, Zhixu Li, Jie Zhou.
-        Understanding Translationese in Cross-Lingual Summarization.          
-          In <i>Proceedings of the 2023 Conference on  Empirical Methods in Natural Language Processing (EMNLP’23 Findings). </i> 
-        </li>
-      
+          Yinghan Shen, Xuhui Jiang, Zijian Li, Yuanzhuo Wang, <b>Chengjin Xu</b>, Huawei Shen, Xueqi Cheng
+          Uniskgrep: A Unified Representation Learning Framework of Social Network and Knowledge Graph.
+          In <i> Neural Networks, 2023. </i> 
+          [<a target="_blank" href="https://www.sciencedirect.com/science/article/abs/pii/S0893608022004518">Link</a>] 
+        </li>  
       
         <font size="3">
             <b>2022</b>
         </font>
-
-      
-        <li style="margin:10px"><b>Jiarong Xu</b>, Yang Yang, Junru Chen, Xin Jiang, Chunping Wang, Jiangang Lu and Yizhou Sun.
-        Unsupervised Adversarially Robust Representation Learning on Graphs.
-          In <i>Proceedings of the 36th Conference on Artificial Intelligence (AAAI’22). </i>  [<a href="works/11849.XuJ.pdf">PDF</a>] [<a href="https://github.com/galina0217/robustgraph">Code</a>]
+        <li style="margin:10px"><b>Chengjin Xu</b>, Fenglong Su, Bo Xiong, Jens Lehmann.
+          Time-aware Entity Alignment using Temporal Relational Attention.
+          In <i>Proceedings of the ACM Web Conference 2022 (WWW’22). </i>  [<a href="https://www.researchgate.net/profile/Chengjin-Xu/publication/360180258_Time-aware_Entity_Alignment_using_Temporal_Relational_Attention/links/63755c2d54eb5f547cda302f/Time-aware-Entity-Alignment-using-Temporal-Relational-Attention.pdf">PDF</a>]
         </li>
 
-        <li style="margin:10px"><b>Jiarong Xu</b>, Yizhou Sun, Xin Jiang, Yanhao Wang, Chunping Wang, Jiangang Lu and Yang Yang. 
-        Blindfolded Attackers Still Threatening: Strict Black-Box Adversarial Attacks on Graphs.
-          In <i>Proceedings of the 36th Conference on Artificial Intelligence (AAAI’22). </i>  [<a href="works/11209.XuJ.pdf">PDF</a>] [<a href="https://github.com/galina0217/stack">Code</a>]
+        <li style="margin:10px">Bo Xiong, Shichao Zhu, Mojtaba Nayyeri, <b>Chengjin Xu</b>, Shirui Pan, Chuan Zhou, Steffen Staab.
+          Ultrahyperbolic Knowledge Graph Embeddings.
+          In <i>The 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD’22). </i>  [<a href="https://arxiv.org/pdf/2206.00449.pdf">PDF</a>]
         </li>
 
-      
-      
-        <li style="margin:10px"><b>Jiarong Xu</b>, Yang Yang, Chunping Wang, Zongtao Liu, Jing Zhang, Lei Chen and Jiangang Lu. 
-        Robust Network Enhancement from Flawed Networks. 
-        In <i>IEEE Transactions on Knowledge and Data Engineering (TKDE), 2022.</i>   [<a href="works/enet/tkde2020_robust_xu.pdf">PDF</a>] [<a href="https://github.com/galina0217/E-Net">Code</a>]
+        
+        <li style="margin:10px"><b>Chengjin Xu</b>, Mojtaba Nayyeri, Yung-Yu Chen, Jens Lehmann.
+          Geometric Algebra based Embeddings for Static and Temporal Knowledge Graph Completion.
+          In <i>IEEE Transactions on Knowledge and Data Engineering (TKDE), 2022. </i>  [<a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/9713947">Link</a>] 
         </li>
-
-      
-        <li style="margin:10px">
-        Xuanwen Huang, Yang Yang, Yang Wang, Chunping Wang, Zhisheng Zhang, <b>Jiarong Xu</b>, and Lei Chen. 
-        DGraph: A Large-Scale Financial Dataset for Graph Anomaly Detection. 
-        In <i>Proceedings of the 36th Conference on Neural Information Processing System Track on Datasets and Benchmarks (NeurIPS’22 D&B).</i> 
-        [<a target="_blank" href="http://yangy.org/works/dgraph/dgraph_2022.pdf">PDF</a>]
-        [<a target="_blank" href="https://dgraph.xinye.com/introduction">DGraph Data</a>]
-        </li>
-      
-        <li style="margin:10px">
-        Ziwei Chai, Siqi You, Yang Yang, Shiliang Pu, <b>Jiarong Xu</b>, Haoyang Cai, and Weihao Jiang.
-        Can Abnormality be Detected by Graph Neural Networks?
-          In <i>Proceedings of the 31st International Joint Conference on Artificial Intelligence (IJCAI'22). </i> 
-          [<a href="http://yangy.org/works/gnn/IJCAI22_Abnormality.pdf">PDF</a>]  [<a href="https://github.com/zjunet/AMNet">Code</a>]   
-        </li>
-      
-        <li style="margin:10px">
-        Yifei Sun, Haoran Deng, Yang Yang, Chunping Wang, <b>Jiarong Xu</b>, Renhong Huang, Linfeng Cao, Yang Wang and Lei Chen.
-        Beyond Homophily: Structure-aware Path Aggregation Graph Neural Network.
-          In <i>Proceedings of the 31st International Joint Conference on Artificial Intelligence (IJCAI'22). </i>  
-          [<a href="http://yangy.org/works/gnn/IJCAI22_Beyond.pdf">PDF</a>] [<a href="https://github.com/zjunet/PathNet">Code</a>]  
-        </li>
-
-
       
         <font size="3">
             <b>2021 and prior</b>
         </font>
 
-        <li style="margin:10px"><b>Jiarong Xu</b>, Yifan Luo, Jianrong Tao, Changjie Fan, Zhou Zhao and Jiangang Lu. 
-        NGUARD+: A Attention-based Game Bot Detection Framework via Player Behavior Sequences. 
-        In <i>ACM Transactions on Knowledge Discovery from Data (TKDD), 2020.</i>  [<a href="works/nguard/nguard_plus.pdf">PDF</a>]
+        <li style="margin:10px"><b>Chengjin Xu</b>, Fenglong Su, Jens Lehmann.
+          Time-aware Graph Neural Network for Entity Alignment between Temporal Knowledge Graphs.
+          In <i>Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing (EMNLP’21). </i>  [<a href="https://aclanthology.org/2021.emnlp-main.709.pdf">PDF</a>] [<a href="https://github.com/soledad921/TEA-GNN">Code</a>] 
         </li>
 
-        <li style="margin:10px">Jianrong Tao*, <b>Jiarong Xu*</b>, Linxia Gong, Yifu Li, Changjie Fan and Zhou Zhao.
-        NGUARD: A Game Bot Detection Framework for NetEase MMORPGs.
-        In <i>Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD'18).</i>
-            [<a href="works/nguard/nguard.pdf">PDF</a>]  (*: equal contribution)
-        </li>
-      
-        <li style="margin:10px">
-        Qinkai Zheng, Xu Zou, Yuxiao Dong, Yukuo Cen, Da Yin, <b>Jiarong Xu</b>, Yang Yang, and Jie Tang. 
-        Graph Robustness Benchmark: Benchmarking the Adversarial Robustness of Graph Machine Learning. 
-          In <i>Proceedings of the 35th Conference on Neural Information Processing Systems Track on Datasets and Benchmarks (NeurIPS’21 D&B). </i>  [<a href="https://openreview.net/pdf?id=NxWUnvwFV4">PDF</a>] [<a href="https://cogdl.ai/grb/home">Code</a>]
-        </li>
-      
-        <li style="margin:10px">Yiren Shen, Xiaoxian Ou, <b>Jiarong Xu</b>, Guanglin Zhang, Lin Wang and Dapeng Li.
-        Optimal energy storage management for microgrids with ON/OFF co-generator: A two-time-scale approach.
-        In <i>Proceedings of the 3rd IEEE Conference on Signal and Information Processing (GlobalSIP'15).</i>
-            [<a href="works/others/energy.pdf">PDF</a>]
+        <li style="margin:10px"><b>Chengjin Xu</b>, Fenglong Su, Jens Lehmann.
+          Knowledge Graph Representation Learning using Ordinary Differential Equations.
+          In <i>Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing (EMNLP’21). </i>  [<a href="https://aclanthology.org/2021.emnlp-main.750.pdf">PDF</a>] <b>(Oral Paper)</b>
         </li>
 
-         <li style="margin:10px">Chen Chen, Xueyuan Li, Ye Yang, <b>Jiarong Xu</b>, Zuwei Liao, Xinggao Liu and Jinshui Chen and Jiangang Lu.
-        Parameter Self-Tuning of SISO Compact-Form Model-Free Adaptive Controller based on Neural Network with System Error Set as Input.
-        In <i>Proceedings of the 12th Asian Control Conference (ASCC'19).</i>
-            [<a href="works/others/siso.pdf">PDF</a>]
+        <li style="margin:10px"><b>Chengjin Xu</b>, Yung-Yu Chen, Mojtaba Nayyeri, Jens Lehmann.
+          Temporal Knowledge Graph Completion using a Linear Temporal Regularizer and Multivector Embeddings.
+          In <i>Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics (NAACL’21). </i>  [<a href="https://aclanthology.org/2021.naacl-main.202.pdf">PDF</a>][<a href="https://github.com/soledad921/TeLM">Code</a>] 
         </li>
 
-         <li style="margin:10px">Ye Yang, Jinhou Han, Chen Chen, <b>Jiarong Xu</b>, Zuwei Liao, Xinggao Liu, Jinshui Chen and Jiangang Lu.
-        A PSO-LP Cooperative Algorithm for Mixed Integer Nonlinear Programming.
-        In <i>Proceedings of the 12th Asian Control Conference (ASCC'19).</i>
-            [<a href="works/others/psolp.pdf">PDF</a>]
+        <li style="margin:10px">Mojtaba Nayyeri, <b>Chengjin Xu</b>, Mirza Mohtashim Alam, Jens Lehmann, Hamed Shariat Yazdi.
+          LogicENN: A Neural based Knowledge Graph Embedding Model with Logical Rules.
+          In <i>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2021. </i>  [<a href="https://arxiv.org/pdf/1908.07141.pdf">PDF</a>]
+        </li>
+
+        <li style="margin:10px"><b>Chengjin Xu</b>, Mojtaba Nayyeri, Yung-Yu Chen, Jens Lehmann.
+          Knowledge Graph Embeddings in Geometric Algebras.
+          In <i>Proceedings of the 28th International Conference on Computational Linguistics (COLING'20). </i>  [<a href="https://aclanthology.org/2020.coling-main.46.pdf">PDF</a>] <b>(Oral Paper)</b>
+        </li>
+
+        <li style="margin:10px"><b>Chengjin Xu</b>, Mojtaba Nayyeri, Fouad Alkhoury, Hamed Shariat Yazdi, Jens Lehmann.
+          TeRo: A Time-aware Knowledge Graph Embedding via Temporal Rotation.
+          In <i>Proceedings of the 28th International Conference on Computational Linguistics (COLING'20). </i>  [<a href="https://aclanthology.org/2020.coling-main.46.pdf">PDF</a>][<a href="https://github.com/soledad921/ATISE">Code</a>]
+        </li>
+
+        <li style="margin:10px"><b>Chengjin Xu</b>, Mojtaba Nayyeri, Fouad Alkhoury, Hamed Shariat Yazdi, Jens Lehmann.
+          Temporal Knowledge Graph Completion Based on Time Series Gaussian Embedding.
+          In <i>International Semantic Web Conference 2020 (ISWC'20). </i>  [<a href="https://arxiv.org/pdf/1911.07893.pdf">PDF</a>][<a href="https://github.com/soledad921/ATISE">Code</a>] <b>(Spotlight Paper)</b>
+        </li>
+
+        <li style="margin:10px">Mojtaba Nayyeri, <b>Chengjin Xu</b>, Sahar Vahdati, Nadezhda Vassilyeva, Emanuel Sallinger, Hamed Shariat Yazdi, Jens Lehmann.
+          Fantastic Knowledge Graph Embeddings and How to Find the Right Space for Them.
+          In <i>International Semantic Web Conference 2020 (ISWC'20). </i>  [<a href="https://www.researchgate.net/profile/Chengjin-Xu/publication/346501394_Fantastic_Knowledge_Graph_Embeddings_and_How_to_Find_the_Right_Space_for_Them/links/63755cfa54eb5f547cda305e/Fantastic-Knowledge-Graph-Embeddings-and-How-to-Find-the-Right-Space-for-Them.pdf">PDF</a>]
         </li>
 
 <!--          <li style="margin:10px"><b>Jiarong Xu</b>, Chen Chen, Ye Yang and Jiangang Lu.
@@ -323,18 +340,22 @@
 
     <div class="container">
         <div class="page-header">
-            <h2>Academic Activities</h2>
+            <h2>Academic Activities and Honors</h2>
         </div>
         <li style="margin:10px">
-        PC Members: KDD, NeurIPS, ICLR, WWW, AAAI, WSDM, EMNLP, ECML-PKDD, SDM
+        PC Members: NeurIPS, KDD, ICLR, WWW, AAAI, ACL, EMNLP, ECAI
         </li>
       
         <li style="margin:10px">
-        Reviewers: IEEE Transactions on Knowledge and Data Engineering (TKDE), IEEE Transaction on Big Data, IEEE Transactions on Network and Service Management
+        Reviewers: IEEE Transactions on Knowledge and Data Engineering (TKDE), IEEE Transactions on Neural Networks and Learning Systems (TNNLS), IEEE/ACM Transactions on Audio, Speech, and Language Processing (TASLP)
         </li>
 
         <li style="margin:10px">
-        Guest Editor of  IEEE Transactions on Big Data (TBD)
+        ISWC'2020 Best Student Paper Nominee (3/170)
+        </li>
+
+        <li style="margin:10px">
+        深圳“鹏程孔雀计划”特聘岗位人才（B档）
         </li>
     </div>
 
@@ -372,12 +393,12 @@
                         
                         <li>
                             <i class="fa-li fa fa-envelope fa-2x" aria-hidden="true"></i>
-                            <span>
-                                <a href="mailto:jiarongxu@fudan.edu.cn">jiarongxu@fudan.edu.cn</a></span>
+                            
+                                <a href="mailto:xuchengjin@idea.edu.cn">xuchengjin@idea.edu.cn</a>
                         </li>
                         <li>
                             <i class="fa-li fa fa-map-marker fa-2x" aria-hidden="true"></i>
-                            <span>Room 609, Siyuan Building</span></li>
+                            Room 3901, Building 1, Changfu Jinmao Mansion, No. 5 Shi Hua Road, Futian District, Shenzhen</li>
                     </ul>
                 </div>
     </div>
@@ -388,7 +409,7 @@
     <hr> -->
 
     <footer>
-        <p style="margin:10px;">Created by <a href=""> Jiarong Xu </a>, using a design from <a href="http://getbootstrap.com/"> bootstrap </a></p>
+        <p style="margin:10px;">Created by <a href=""> Chengjin Xu </a>, using a design from <a href="http://getbootstrap.com/"> bootstrap </a></p>
     </footer>
     </div> <!-- /container
 
