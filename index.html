@@ -114,7 +114,7 @@
           address these limitations. More specifically, knowledge-driven LLM reasoning leverages LLMs to interact with the external enviroment (consisting of a variety of knowledge sources, e.g., KGs, textual corpus, databases, code repositories) and retrieve necessary knowledge to enhance the understanding and generation
           capabilities of LLMs, providing them the ability to reason over complex questions or tasks.<br><br>
           
-          Among various knowledge sources, KGs offer structured, explicit,and editable representations of knowledge, presenting a complementary strategy to mitigate the limitations of LLMs. Thus, we first focus on the usage of KGs as external knowledge sources for LLMs and propose an algorithmic framework “Think-on-Graph” (meaning: LLMs “Think” along the reasoning paths “on” knowledge “graph” step-by-step, abbreviated as <a href="https://arxiv.org/pdf/2307.07697.pdf">ToG (under review in ICLR'24 with scores of 6,6,8,8)</a>). Using beam search, ToG allows LLM to dynamically explore a number of reasoning paths in KG and make decisions accordingly. Moreover, we also conduct a <a href="https://arxiv.org/pdf/2310.04835.pdf">survey</a> on the revolution of KGs and provide new perspective on the combination of LLMs and different types of KGs.<br><br>
+          Among various knowledge sources, KGs offer structured, explicit,and editable representations of knowledge, presenting a complementary strategy to mitigate the limitations of LLMs. Thus, we first focus on the usage of KGs as external knowledge sources for LLMs and propose an algorithmic framework “Think-on-Graph” (meaning: LLMs “Think” along the reasoning paths “on” knowledge “graph” step-by-step, abbreviated as <a href="https://arxiv.org/pdf/2307.07697.pdf">ToG (ICLR'24)</a>). Using beam search, ToG allows LLM to dynamically explore a number of reasoning paths in KG and make decisions accordingly. Moreover, we also conduct a <a href="https://arxiv.org/pdf/2310.04835.pdf">survey</a> on the revolution of KGs and provide new perspective on the combination of LLMs and different types of KGs.<br><br>
           
           In the future, we will explore new approaches of knowledge-driven LLM reasoning that can incorporate different type of knowledge sources hybridly, as well as new KG types that can be easier to combined with LLMs than existing KGs. Besides, multi-modal LLMs (specifically for chart and table understanding), LLM agents for complex reasoning tasks are also our research interests.
           
@@ -171,6 +171,7 @@
           <h2>News</h2>
       </div>
       <font size="3">
+        [2024.01] <a href="https://arxiv.org/pdf/2307.07697.pdf">ToG</a> was accepted to <a href="https://iclr.cc/Conferences/2024">ICLR'24</a>. <br>
         [2023.11] <a href="https://arxiv.org/pdf/2307.07697.pdf">ToG</a> was reported by <a href="https://wap.peopleapp.com/article/7267174/7106600">人民日报</a> and <a href="https://mp.weixin.qq.com/s/NsQIZoHlgXq80FlixuI9sQ">新智元</a> on Wechat. <br>
         [2023.10] One paper was accepted to <a href="https://2023.emnlp.org/">EMNLPS'23</a>. <br>
         [2023.09] <a href="https://openreview.net/pdf?id=oaGdsgB18L">TFLEX</a> was accepted to <a href="https://nips.cc/">NeurIPS'23</a>. <br>
@@ -199,7 +200,15 @@
         <font size="3">
             <b>2023</b>
         </font>
-      
+
+
+        <li style="margin:10px">
+          Jiashuo Sun*, <b>Chengjin Xu</b>*, Lumingyuan Tang*, Saizhuo Wang, Chen Lin, Yeyun Gong, Heung-Yeung Shum, Jian Guo#
+          Think-on-graph: Deep and responsible reasoning of large language model with knowledge graph.
+           In <i> the 12th International Conference on Learning Representations  (ICLR'24).</i> 
+           [<a target="_blank" href="https://arxiv.org/pdf/2307.07697.pdf">PDF</a>] [<a href="https://github.com/IDEA-FinAI/ToG">Code</a>]
+          </li> 
+
        <li style="margin:10px">
         Xueyuan Lin, Haihong E#, <b>Chengjin Xu</b>#, Gengxian Zhou, Haoran Luo, Tianyi Hu, Fenglong Su, Ningyuan Li, Mingzhi Sun
         TFLEX: Temporal Feature-Logic Embedding Framework for Complex Reasoning over Temporal Knowledge Graph.
