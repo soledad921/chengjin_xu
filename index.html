@@ -116,9 +116,11 @@
           address these limitations. More specifically, knowledge-driven LLM reasoning leverages LLMs to interact with the external enviroment (consisting of a variety of knowledge sources, e.g., KGs, textual corpus, databases, code repositories) and retrieve necessary knowledge to enhance the understanding and generation
           capabilities of LLMs, providing them the ability to reason over complex questions or tasks.<br><br>
           
-          Among various knowledge sources, KGs offer structured, explicit,and editable representations of knowledge, presenting a complementary strategy to mitigate the limitations of LLMs. Thus, we first focus on the usage of KGs as external knowledge sources for LLMs and propose an algorithmic framework "Think-on-Graph" (meaning: LLMs "Think" along the reasoning paths "on" knowledge "graph" step-by-step, abbreviated as <a href="https://arxiv.org/pdf/2307.07697.pdf">ToG (ICLR'24)</a>). Using beam search, ToG allows LLM to dynamically explore a number of reasoning paths in KG and make decisions accordingly. Moreover, we also conduct a <a href="https://arxiv.org/pdf/2310.04835.pdf">survey</a> on the revolution of KGs and provide new perspective on the combination of LLMs and different types of KGs.<br><br>
+          Among various knowledge sources, KGs offer structured, explicit, and editable representations of knowledge, presenting a complementary strategy to mitigate the limitations of LLMs. We first propose an algorithmic framework "Think-on-Graph" (meaning: LLMs "Think" along the reasoning paths "on" knowledge "graph" step-by-step, abbreviated as <a href="https://arxiv.org/pdf/2307.07697.pdf">ToG (ICLR'24)</a>). Using beam search, ToG allows LLM to dynamically explore reasoning paths in KG and make decisions accordingly.<br><br>
           
-          In the future, we will explore new approaches of knowledge-driven LLM reasoning that can incorporate different type of knowledge sources hybridly, as well as new KG types that can be easier to combined with LLMs than existing KGs. Besides, multi-modal LLMs (specifically for chart and table understanding), LLM agents for complex reasoning tasks are also our research interests.
+          Building upon ToG, we introduce <a href="https://arxiv.org/abs/2407.10805">Think-on-Graph 2.0 (ICLR'25)</a>, a hybrid RAG framework that iteratively retrieves information from both unstructured documents and structured knowledge graphs. ToG-2 alternates between graph retrieval and context retrieval to achieve more precise and efficient knowledge-guided reasoning. We also conduct a comprehensive <a href="https://arxiv.org/pdf/2310.04835.pdf">survey</a> on the evolution of KGs and provide new perspectives on combining LLMs with different types of KGs.<br><br>
+          
+          Beyond reasoning, we explore LLM evaluation through our <a href="https://www.cell.com/the-innovation/fulltext/S2666-6758(25)00456-4">survey on LLM-as-a-Judge</a>, systematically reviewing how LLMs can serve as evaluators. Our ongoing research continues to explore multi-modal LLMs (specifically for chart and table understanding), LLM agents for complex reasoning tasks, and hybrid approaches that incorporate diverse knowledge sources.
           
 <!--           ([<a href="works/enet/tkde2020_robust_xu.pdf">Xu et al, TKDE'20</a>, <a href="https://github.com/galina0217/E-Net">Code</a>]). -->
          </p>
@@ -144,19 +146,18 @@
         <p>Network data in real-world tends to be error-prone due to incomplete sampling, imperfect measurements, etc.; this in turn results in inaccurate results when performing network analysis or modeling, such as node classiﬁcation and link prediction, on these ﬂawed networks. We aim to reconstruct a reliable network from a ﬂawed, undirected, unweighted network, a process referred to network enhancement. More speciﬁcally, network enhancement aims to detect the noisy links that are observed in the network but should not exist in the real world, as well as to predict the missing links that do indeed exist in the real world yet remain unobserved. (Xu et al, TKDD'20 [<a href="https://github.com/galina0217/E-Net">Code</a>]).</p>
  -->
         <div class="page-header">
-            <h4>Temporal Knowledge Graph Embedding</h4>
+            <h4>Synthetic Data Technology</h4>
         </div>
         <img width="450" src="works/tkgr/tkgr.png" align="left" style="margin-left:20px;margin-right:20px">
-        <!-- <p>Game bots are automated programs that assist cheating users and enable them to obtain huge superiority, leading to an imbalance in the game ecosystem and the collapse of user interest. Therefore, game bot detection becomes particularly important and urgent. Among many kinds of online games, massively multiplayer online role playing games (MMORPGs), such as World of Warcraft and AION, provide immersive gaming experience and attract many loyal fans. At the same time, however, game bots in MMORPGs have proliferated in volume and method, evolving with the real-world detection methods and showing strong diversity, leaving MMORPG bot detection efforts extremely difficult. </p>
-        <p>To deal with the fast-changing nature of game bots, we here proposed a generalized game bot detection framework for MMORPGs termed NGUARD, denoting NetEase Games' Guard. NGUARD takes charge of automatically differentiating game bots from humans for MMORPGs. In detail, NGUARD exploits a combination of supervised and unsupervised methods. Supervised models are utilized to detect game bots in observed patterns according to the training data. Meanwhile, unsupervised solutions are employed to detect clustered game bots and help discovering new bots. The game bot detection framework NGUARD has been implemented and deployed in multiple MMORPG productions in the NetEase Game portfolio, achieving remarkable performance improvement and acceleration compared to traditional methods. Moreover, the framework reveals outstanding robustness for game bots in mutated patterns and even in completely new patterns on account of the design of the auto-iteration mechanism ([<a href="works/nguard/nguard.pdf">Tao and Xu et al, KDD'18</a>];[<a href="works/nguard/nguard_plus.pdf">Xu et al, TKDD'20</a>]).</p> -->
-        <p>Temporal Knowledge Graph (TKG) is structured as a multi-relational directed graph where each edge stands for an occurred fact. TKG consists of a large number of facts in the form of quadruple (subject entity, relation, object entity, timestamp) , or (s, r, o, t) for short, where entities (as nodes) are connected via relations with timestamps (as edges).<br><br>
+        <p>Synthetic data has emerged as a critical technology for training and improving large language models, especially when dealing with limited or proprietary data. High-quality synthetic data can significantly enhance model performance while addressing privacy concerns and data scarcity issues.<br><br>
 
-        Many TKGs are human-created or automatically constructed from semi-structured and unstructured text, suffering the problem of incompleteness, i.e. many missing links among entities. This weakens the expressive ability of TKGs and restricts the range of TKG-based applications. To address this isse, we propose multiple TKG embedding model, including <a href="https://arxiv.org/pdf/1911.07893.pdf">ATiSE (ISWC'2020 best student paper award nominee)</a>, <a href="https://aclanthology.org/2020.coling-main.139.pdf">TeRo (COLING'20)</a>, <a href="https://aclanthology.org/2021.naacl-main.202.pdf">TeLM (NAACL'21)</a>, <a href="https://link.springer.com/chapter/10.1007/978-3-031-43418-1_36">TRE (ECML'23)</a> and <a href="https://ieeexplore.ieee.org/abstract/document/9713947">TGeomE (TKDE)</a>, for predicting missing links on KGs by learning low-dimensional vector representations for entities, relations and timestamps. We also propose the first query embedding framework <a href="https://openreview.net/pdf?id=oaGdsgB18L">TFLEX (NeurIPS'23)</a> which can model first-order logic and temporal logic in KG embedding spaces.<br><br>
+        Our research focuses on developing advanced synthetic data generation frameworks that leverage knowledge graphs to create more accurate and contextually rich training data. We propose <a href="https://arxiv.org/abs/2505.00979">Synthesize-on-Graph (SoG)</a>, a novel framework that incorporates cross-document knowledge associations for efficient corpus synthesis. SoG utilizes knowledge graphs to capture complex relationships and dependencies, enabling the generation of synthetic data that maintains semantic coherence and factual accuracy.<br><br>
 
-        Since knowledge of TKGs is ever-changing and the temporal information makes TKGs highly dynamic. In the real world scenario, the emergence of new entities/relations in the development process over time creates the need for TKG reasoning in the inductive setting, where entities/relations in training TKGs do not completely overlap entities/relations in testing KGs. Thus, we propose <a href="https://arxiv.org/pdf/2302.05640.pdf">MTKGE (WWW'23)</a> and <a href="https://arxiv.org/pdf/2304.04717.pdf">SST-BERT (SIGIR'23)</a> which both can effectively model new emerging entities for inductive TKG reasoning. <br><br>
+        To address the challenge of long-context reasoning in LLMs, we introduce <a href="https://arxiv.org/abs/2502.12583">LongFaith (ACL'25 Findings)</a>, which focuses on synthesizing faithful long-context reasoning instruction datasets. LongFaith ensures that synthetic data maintains faithfulness across extended contexts, significantly improving LLMs' ability to handle complex, multi-hop reasoning tasks over long documents.<br><br>
 
-        Besides TKG reasoning, TKG alignment, which aims to finding equivalent entities between TKGs, can also benefit the completeness of TKGs by fusing TKGs. In our work <a href="https://aclanthology.org/2021.emnlp-main.709.pdf">TEA-GNN (EMNLP'2021)</a>, the task of TKG alignment was introduced for the first time. Follow-up works include <a href="https://www.researchgate.net/profile/Chengjin-Xu/publication/360180258_Time-aware_Entity_Alignment_using_Temporal_Relational_Attention/links/63755c2d54eb5f547cda302f/Time-aware-Entity-Alignment-using-Temporal-Relational-Attention.pdf">TREA (WWW'22)</a> and <a href="https://arxiv.org/pdf/2304.03468.pdf">Simple-HHEA (WWW'24)</a>. In these papers, we propose different approaches and datasets, carefully designed for TKG alignment.
+        Furthermore, we explore privacy-preserving approaches through <a href="https://arxiv.org/abs/2601.05635">continual pretraining on encrypted synthetic data</a>, addressing the critical challenge of maintaining data privacy while leveraging synthetic data for model improvement. This work demonstrates how synthetic data can be generated and utilized in privacy-sensitive domains without compromising security.<br><br>
 
+        Our synthetic data technology research aims to bridge the gap between data availability and model performance, enabling more efficient and responsible AI development across various domains including finance, healthcare, and legal applications.
 
         </p>
 <!--         <p style="margin-left:20px">Paper:<img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/nguard/nguard.pdf" style="margin-left:-3px; margin-right: 3px;">nguard.pdf</a> <img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/nguard/nguard_plus.pdf" style="margin-left:-3px; margin-right: 3px;">nguard+.pdf</a> </p> -->
@@ -202,6 +203,38 @@
         <font size="3">
         See full list at <a href="https://scholar.google.com/citations?hl=en&user=sIts5VgAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a>. (*equal contribution, #corresponding author)<br><br>
       </font>
+
+      <font size="3">
+        <b>2025</b>
+      </font>
+
+      <li style="margin:10px">
+        Shengjie Ma*, <b>Chengjin Xu</b>*, Chaozhuo Li, Haoran Luo, Weizhi Ma, Yingxia Shao, Xing Xie, Jian Guo#.
+        Think-on-Graph 2.0: Deep and Faithful Large Language Model Reasoning with Knowledge-guided Retrieval Augmented Generation.
+         In <i> the 13th International Conference on Learning Representations (ICLR'25).</i> 
+         [<a target="_blank" href="https://arxiv.org/abs/2407.10805">PDF</a>]
+        </li> 
+
+      <li style="margin:10px">
+        Xuhui Jiang*, <b>Chengjin Xu</b>*, Yinghan Shen, Zhichao Shi, Yuanzhuo Wang, Chenchen Ye, Huixuan Chi, Zheng Li, Yu Zhao, Jiawei Han, Jian Guo, Yusu Wang.
+        Synthesize-on-Graph: Knowledgeable Synthetic Data Generation for Continue Pre-training of Large Language Models.
+         In <i> arXiv preprint arXiv:2505.00979, 2025.</i> 
+         [<a target="_blank" href="https://arxiv.org/abs/2505.00979">PDF</a>]
+        </li> 
+
+      <li style="margin:10px">
+        Cehao Yang*, <b>Chengjin Xu</b>*, Zixuan Li, Yinghan Shen, Zhichao Shi, Xuhui Jiang, Jian Guo, Yuanzhuo Wang.
+        LongFaith: Enhancing Long-Context Reasoning in LLMs with Faithful Synthetic Data.
+         In <i> Findings of the Association for Computational Linguistics: ACL 2025 (ACL'25 Findings).</i> 
+         [<a target="_blank" href="https://arxiv.org/abs/2502.12583">PDF</a>]
+        </li> 
+
+      <li style="margin:10px">
+        <b>Chengjin Xu</b>, et al.
+        A Survey on LLM-as-a-Judge.
+         In <i> The Innovation, 2025.</i> 
+         [<a target="_blank" href="https://www.cell.com/the-innovation/fulltext/S2666-6758(25)00456-4">Link</a>]
+        </li> 
 
       <font size="3">
         <b>2024</b>
