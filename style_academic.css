@@ -89,12 +89,14 @@ body {
 
 .profile-photo {
   width: 200px;
-  height: 200px;
+  height: auto;
+  max-height: 280px;
   border-radius: var(--radius-md);
   border: 1px solid var(--border-color);
-  object-fit: cover;
+  object-fit: contain;
   transition: all 0.3s ease;
   box-shadow: var(--shadow-md);
+  display: block;
 }
 
 .profile-photo:hover {
