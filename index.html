@@ -7,15 +7,14 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-FB3ETPSX2D');
     </script>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Chengjin Xu - International Digital Economy Academy">
-    <meta name="author" content="">
+    <meta name="description" content="Chengjin Xu - Co-founder & CTO of DataArc Technology Inc.">
+    <meta name="author" content="Chengjin Xu">
     <link rel="shortcut icon" href="img/AIicon.png">
 
     <title>Chengjin Xu's Homepage</title>
@@ -23,23 +22,11 @@
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="jumbotron.css" rel="stylesheet">
-    
-    <!-- Enhanced Complete Styles -->
-    <link href="style_complete.css" rel="stylesheet">
+    <!-- Academic Style -->
+    <link href="style_academic.css" rel="stylesheet">
     
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body>
@@ -53,7 +40,6 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <!-- <img height="50" src="img/sheep2.jpeg" align="left" hspace="6" style="margin-left:-6p;margin-right:20px"> -->
           <a class="navbar-brand" href="#">Chengjin Xu (徐铖晋)</a>
         </div>
         <div class="navbar-collapse collapse">
@@ -61,29 +47,18 @@
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#research">Research</a></li>
           <li><a href="#publication">Publications</a></li>
+          <li><a href="#news">News</a></li>
           <li><a href="#contact">Contact</a></li>
-          <!-- <li><a href="#award">Awards</a></li> -->
         </ul>
-
-          <!--
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-          -->
-        </div><!--/.navbar-collapse -->
+        </div>
       </div>
     </div>
 
-    <!-- Enhanced Hero Section -->
+    <!-- Hero Section - Clean & Minimalist -->
     <div class="jumbotron">
       <div class="container">
         <div class="profile-section">
+          <!-- Left Column -->
           <div class="profile-left">
             <img src="img/xuchengjin.jpg" alt="Chengjin Xu" class="profile-photo">
             
@@ -119,10 +94,11 @@
             </div>
             
             <a href="mailto:xuchengjin@dataarctech.com" class="btn-contact">
-              <i class="fas fa-envelope"></i> Contact Me
+              <i class="fas fa-envelope"></i> Contact
             </a>
           </div>
           
+          <!-- Right Column -->
           <div class="profile-right">
             <div class="profile-intro">
               <p>
@@ -152,16 +128,18 @@
               </p>
             </div>
             
-            <h4 style="color: #2563eb; font-weight: 700; margin-top: 30px; margin-bottom: 15px;">
-              <i class="fas fa-microscope"></i> Research Interests
-            </h4>
-            <div class="research-interests">
-              <span class="interest-tag">Text Synthetic Data</span>
-              <span class="interest-tag">Speech Synthetic Data</span>
-              <span class="interest-tag">Multimodal Synthetic Data</span>
-              <span class="interest-tag">Privacy-Preserving Data</span>
-              <span class="interest-tag">LLM Pretraining</span>
-              <span class="interest-tag">LLM Fine-tuning</span>
+            <div>
+              <h4 style="font-size: 14px; font-weight: 600; color: #1e3a8a; margin-bottom: 12px;">
+                <i class="fas fa-microscope"></i> Research Interests
+              </h4>
+              <div class="research-interests">
+                <span class="interest-tag">Text Synthetic Data</span>
+                <span class="interest-tag">Speech Synthetic Data</span>
+                <span class="interest-tag">Multimodal Synthetic Data</span>
+                <span class="interest-tag">Privacy-Preserving Data</span>
+                <span class="interest-tag">LLM Pretraining</span>
+                <span class="interest-tag">LLM Fine-tuning</span>
+              </div>
             </div>
             
             <div class="hiring-banner">
@@ -185,584 +163,303 @@
             <h2>Selected Research Work</h2>
         </div>
       
-        <div class="page-header">
-            <h4>Knowledge-driven LLMs</h4>
+        <div class="research-card">
+          <div class="research-header">
+            <div class="research-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3 class="research-title">Knowledge-driven LLMs</h3>
+          </div>
+          
+          <div class="research-content">
+            <div class="research-image">
+              <img src="works/tog/ToG.gif" alt="Think-on-Graph">
+            </div>
+            
+            <div class="research-text">
+              <p>
+                LLMs have become indispensable in the field of natural language processing, excelling in various reasoning tasks such as text generation and understanding. Despite their remarkable performance, these models encounter challenges related to explainability, safety, hallucination, out-of-date knowledge, and deep reasoning capabilities, particularly when dealing with knowledge-intensive tasks.
+              </p>
+              
+              <p>
+                Our research delves into the potential of knowledge-driven LLM reasoning as a promising approach to address these limitations. More specifically, knowledge-driven LLM reasoning leverages LLMs to interact with the external environment (consisting of a variety of knowledge sources, e.g., KGs, textual corpus, databases, code repositories) and retrieve necessary knowledge to enhance the understanding and generation capabilities of LLMs.
+              </p>
+              
+              <p>
+                Among various knowledge sources, KGs offer structured, explicit, and editable representations of knowledge. We first propose an algorithmic framework "Think-on-Graph" (<a href="https://arxiv.org/pdf/2307.07697.pdf">ToG (ICLR'24)</a>). Building upon ToG, we introduce <a href="https://arxiv.org/abs/2407.10805">Think-on-Graph 2.0 (ICLR'25)</a>, a hybrid RAG framework that iteratively retrieves information from both unstructured documents and structured knowledge graphs.
+              </p>
+            </div>
+          </div>
         </div>
-        <img width="450" src="works/tog/ToG.gif" align="left" style="margin-left:20px;margin-right:20px;margin-bottom:20px">
-      
-        <p>
-          LLMs have become indispensable in the field of natural language processing, excelling in various reasoning tasks such as text generation and understanding. Despite their remarkable performance, these models encounter challenges related to explainability, safety, hallucination, out-of-date knowledge, and deep reasoning capabilities, particularly when dealing with knowledge-intensive tasks.<br><br>
+        
+        <div class="research-card">
+          <div class="research-header">
+            <div class="research-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3 class="research-title">Synthetic Data Technology</h3>
+          </div>
           
-          Our research aims to  delves into the potential of knowledge-driven LLM reasoning as a promising approach to
-          address these limitations. More specifically, knowledge-driven LLM reasoning leverages LLMs to interact with the external enviroment (consisting of a variety of knowledge sources, e.g., KGs, textual corpus, databases, code repositories) and retrieve necessary knowledge to enhance the understanding and generation
-          capabilities of LLMs, providing them the ability to reason over complex questions or tasks.<br><br>
-          
-          Among various knowledge sources, KGs offer structured, explicit, and editable representations of knowledge, presenting a complementary strategy to mitigate the limitations of LLMs. We first propose an algorithmic framework "Think-on-Graph" (meaning: LLMs "Think" along the reasoning paths "on" knowledge "graph" step-by-step, abbreviated as <a href="https://arxiv.org/pdf/2307.07697.pdf">ToG (ICLR'24)</a>). Using beam search, ToG allows LLM to dynamically explore reasoning paths in KG and make decisions accordingly.<br><br>
-          
-          Building upon ToG, we introduce <a href="https://arxiv.org/abs/2407.10805">Think-on-Graph 2.0 (ICLR'25)</a>, a hybrid RAG framework that iteratively retrieves information from both unstructured documents and structured knowledge graphs. ToG-2 alternates between graph retrieval and context retrieval to achieve more precise and efficient knowledge-guided reasoning. We also conduct a comprehensive <a href="https://arxiv.org/pdf/2310.04835.pdf">survey</a> on the evolution of KGs and provide new perspectives on combining LLMs with different types of KGs.<br><br>
-          
-          Beyond reasoning, we explore LLM evaluation through our <a href="https://www.cell.com/the-innovation/fulltext/S2666-6758(25)00456-4">survey on LLM-as-a-Judge</a>, systematically reviewing how LLMs can serve as evaluators. Our ongoing research continues to explore multi-modal LLMs (specifically for chart and table understanding), LLM agents for complex reasoning tasks, and hybrid approaches that incorporate diverse knowledge sources.
-          
-<!--           ([<a href="works/enet/tkde2020_robust_xu.pdf">Xu et al, TKDE'20</a>, <a href="https://github.com/galina0217/E-Net">Code</a>]). -->
-         </p>
-      
-<!--         <p>Network data in real-world tends to be error-prone due to incomplete sampling, imperfect measurements, etc.; this in turn results in inaccurate results when performing network analysis or modeling, such as node classiﬁcation and link prediction, on these ﬂawed networks. 
-          
-          Our research aims to reconstruct a reliable network from a ﬂawed, undirected, unweighted network, a process referred to <i>network enhancement</i>. More speciﬁcally, the goal of network enhancement is to detect the noisy links that are observed in the network but should not exist in the real world, as well as to predict the missing links that do indeed exist in the real world yet remain unobserved. 
-          
-          From one perspective, we turns the network enhancement problem into edge sequences generation, and employ a deep reinforcement learning framework to solve it, which takes advantage of downstream task to guide the network denoising process 
-          
-          ([<a href="works/enet/tkde2020_robust_xu.pdf">Xu et al, TKDE'20</a>, <a href="https://github.com/galina0217/E-Net">Code</a>]).</p> -->
+          <div class="research-content">
+            <div class="research-image">
+              <img src="works/tkgr/tkgr.png" alt="Synthetic Data">
+            </div>
+            
+            <div class="research-text">
+              <p>
+                Synthetic data has emerged as a critical technology for training and improving large language models, especially when dealing with limited or proprietary data. High-quality synthetic data can significantly enhance model performance while addressing privacy concerns and data scarcity issues.
+              </p>
+              
+              <p>
+                Our research focuses on developing advanced synthetic data generation frameworks that leverage knowledge graphs to create more accurate and contextually rich training data. We propose <a href="https://arxiv.org/abs/2505.00979">Synthesize-on-Graph (SoG)</a>, a novel framework that incorporates cross-document knowledge associations for efficient corpus synthesis.
+              </p>
+              
+              <p>
+                To address the challenge of long-context reasoning in LLMs, we introduce <a href="https://arxiv.org/abs/2502.12583">LongFaith (ACL'25 Findings)</a>, which focuses on synthesizing faithful long-context reasoning instruction datasets. Furthermore, we explore privacy-preserving approaches through <a href="https://arxiv.org/abs/2601.05635">continual pretraining on encrypted synthetic data</a>.
+              </p>
+            </div>
+          </div>
+        </div>
     </div>
-
-    <div class="container">
-<!--         <div class="page-header">
-            <h2>Selected Research Work</h2>
-        </div>
-       -->
-<!--         <div class="page-header">
-            <h4>Network Denoising</h4>
-        </div>
-        <img width="300" src="img/network.png" align="left" style="margin-left:20px;margin-right:20px">
-        <p>Network data in real-world tends to be error-prone due to incomplete sampling, imperfect measurements, etc.; this in turn results in inaccurate results when performing network analysis or modeling, such as node classiﬁcation and link prediction, on these ﬂawed networks. We aim to reconstruct a reliable network from a ﬂawed, undirected, unweighted network, a process referred to network enhancement. More speciﬁcally, network enhancement aims to detect the noisy links that are observed in the network but should not exist in the real world, as well as to predict the missing links that do indeed exist in the real world yet remain unobserved. (Xu et al, TKDD'20 [<a href="https://github.com/galina0217/E-Net">Code</a>]).</p>
- -->
-        <div class="page-header">
-            <h4>Synthetic Data Technology</h4>
-        </div>
-        <img width="450" src="works/tkgr/tkgr.png" align="left" style="margin-left:20px;margin-right:20px">
-        <p>Synthetic data has emerged as a critical technology for training and improving large language models, especially when dealing with limited or proprietary data. High-quality synthetic data can significantly enhance model performance while addressing privacy concerns and data scarcity issues.<br><br>
-
-        Our research focuses on developing advanced synthetic data generation frameworks that leverage knowledge graphs to create more accurate and contextually rich training data. We propose <a href="https://arxiv.org/abs/2505.00979">Synthesize-on-Graph (SoG)</a>, a novel framework that incorporates cross-document knowledge associations for efficient corpus synthesis. SoG utilizes knowledge graphs to capture complex relationships and dependencies, enabling the generation of synthetic data that maintains semantic coherence and factual accuracy.<br><br>
-
-        To address the challenge of long-context reasoning in LLMs, we introduce <a href="https://arxiv.org/abs/2502.12583">LongFaith (ACL'25 Findings)</a>, which focuses on synthesizing faithful long-context reasoning instruction datasets. LongFaith ensures that synthetic data maintains faithfulness across extended contexts, significantly improving LLMs' ability to handle complex, multi-hop reasoning tasks over long documents.<br><br>
-
-        Furthermore, we explore privacy-preserving approaches through <a href="https://arxiv.org/abs/2601.05635">continual pretraining on encrypted synthetic data</a>, addressing the critical challenge of maintaining data privacy while leveraging synthetic data for model improvement. This work demonstrates how synthetic data can be generated and utilized in privacy-sensitive domains without compromising security.<br><br>
-
-        Our synthetic data technology research aims to bridge the gap between data availability and model performance, enabling more efficient and responsible AI development across various domains including finance, healthcare, and legal applications.
-
-        </p>
-<!--         <p style="margin-left:20px">Paper:<img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/nguard/nguard.pdf" style="margin-left:-3px; margin-right: 3px;">nguard.pdf</a> <img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/nguard/nguard_plus.pdf" style="margin-left:-3px; margin-right: 3px;">nguard+.pdf</a> </p> -->
-    </div>
-
-
-<br>
-
-
-  <a name="news"></a>
-
-  <div class="container">
-      <div class="page-header">
-          <h2>News</h2>
-      </div>
-      <font size="3">
-        [2026.01] We released <a href="https://github.com/DataArcTech/DataArc-SynData-Toolkit">DataArc SynData Toolkit</a>, an open-source synthetic data generation platform (994 stars). <br>
-        [2026.01] <a href="https://arxiv.org/abs/2601.05635">Continual Pretraining on Encrypted Synthetic Data</a> was accepted to <a href="https://2026.eacl.org/">EACL'26</a>. <br>
-        [2026.01] <a href="https://arxiv.org/abs/2503.17909">Financial Wind Tunnel</a> was accepted to <a href="https://www2026.thewebconf.org/">WWW'26</a>. <br>
-        [2026.01] <a href="https://arxiv.org/abs/2505.00979">Synthesize-on-Graph</a> was accepted to <a href="#">LoG'26</a>. <br>
-        [2025.09] <a href="#">SQL-R1</a> was accepted to <a href="https://nips.cc/Conferences/2025">NeurIPS'25</a>. <br>
-        [2025.05] <a href="https://arxiv.org/abs/2502.12583">LongFaith</a> was accepted to <a href="https://2025.aclweb.org/">ACL'25 Findings</a>. <br>
-        [2025.01] <a href="https://arxiv.org/abs/2407.10805">Think-on-Graph 2.0</a> was accepted to <a href="https://iclr.cc/Conferences/2025">ICLR'25</a>. <br>
-        [2025.01] <a href="#">ChartMoE</a> was accepted to <a href="https://iclr.cc/Conferences/2025">ICLR'25</a> as an oral paper. <br>
-        [2025.01] I co-founded DataArc Technology Inc. and serve as CTO. DataArc is incubated by IDEA. <br>
-        [2024.11] <a href="#">Context-aware Inductive KGC</a> was accepted to <a href="https://aaai.org/conference/aaai/aaai-25/">AAAI'25</a>. <br>
-        [2024.10] <a href="#">Retrieval, Reasoning, Re-ranking</a> was accepted to <a href="https://2025.naacl.org/">NAACL'25</a>. <br>
-        [2024.10] <a href="https://arxiv.org/pdf/2402.15048">MM-ChatAlign</a> was accepted to <a href="https://2024.emnlp.org/">EMNLP'24 Findings</a>. <br>
-        [2024.09] Our survey paper <a href="https://www.cell.com/the-innovation/fulltext/S2666-6758(25)00456-4">A Survey on LLM-as-a-Judge</a> was published in <i>The Innovation</i>. <br>
-        [2024.05] <a href="https://arxiv.org/pdf/2402.15048">ChatEA</a> was accepted to <a href="https://2024.aclweb.org/">ACL'24</a>. <br>
-        [2024.03] <a href="https://openreview.net/pdf?id=_pmZ7mj7gU">Guide-Align</a> was accepted to <a href="https://2024.naacl.org/">NAACL'24</a>. <br>
-        [2024.01] <a href="https://arxiv.org/pdf/2304.03468.pdf">Simple-HHEA</a> was accepted to <a href="https://www2024.thewebconf.org/">WWW'24</a> as an oral paper. <br>
-        [2024.01] <a href="https://arxiv.org/pdf/2307.07697.pdf">ToG</a> was accepted to <a href="https://iclr.cc/Conferences/2024">ICLR'24</a>. <br>
-        [2023.11] <a href="https://arxiv.org/pdf/2307.07697.pdf">ToG</a> was reported by <a href="https://wap.peopleapp.com/article/7267174/7106600">人民日报</a> and <a href="https://mp.weixin.qq.com/s/NsQIZoHlgXq80FlixuI9sQ">新智元</a> on Wechat. <br>
-        [2023.10] One paper was accepted to <a href="https://2023.emnlp.org/">EMNLPS'23</a>. <br>
-        [2023.09] <a href="https://openreview.net/pdf?id=oaGdsgB18L">TFLEX</a> was accepted to <a href="https://nips.cc/">NeurIPS'23</a>. <br>
-        [2023.07] <a href="https://dl.acm.org/doi/abs/10.1145/3581783.3612151">XGEA</a> was accepted to <a href="https://www.acmmm2023.org/">ACM MM'23</a>. <br>
-        [2023.07] <a href="https://www.researchgate.net/publication/374310588_Task-Sensitive_Discriminative_Mutual_Attention_Network_for_Few-Shot_Learning">TDMA</a> was accepted to <a href="https://ecai2023.eu/">ECAI'23</a>. <br>
-        [2023.06] <a href="https://link.springer.com/chapter/10.1007/978-3-031-43418-1_36">TRE</a> was accepted to <a href="https://2023.ecmlpkdd.org/">ECML'23</a>. <br>
-        [2023.05] <a href="https://ieeexplore.ieee.org/abstract/document/9713947">TGeomE</a> was officially published at <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69">TKDE</a>. <br>
-        [2023.04] <a href="https://arxiv.org/pdf/2304.04717.pdf">SST-BERT</a> was accepted to <a href="https://sigir.org/sigir2023/">SIGIR'23</a>. <br>
-        [2023.02] I officially joined the Center of AI Finance and Deep Learning at <a href="https://www.idea.edu.cn//">International Digital Economy Academy (IDEA)</a> as an AI research scientist. <br>
-        [2023.01] I obtained my Ph.D. from the Department of Computer Science at University of Bonn. <br>
-        [2023.01] <a href="https://arxiv.org/pdf/2302.05640.pdf">MTKGE</a> was accepted to <a href="https://www2023.thewebconf.org/">WWW'23</a>. <br>
-        </font>
-  </div>
-
 
     <a name="publication"></a>
+
     <div class="container">
         <div class="page-header">
             <h2>Selected Publication List</h2>
         </div>
 
-        <font size="3">
-        See full list at <a href="https://scholar.google.com/citations?hl=en&user=sIts5VgAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a>. (*equal contribution, #corresponding author)<br><br>
-      </font>
+        <p style="font-size: 13px; color: #6b7280; margin-bottom: 24px;">
+          See full list at <a href="https://scholar.google.com/citations?hl=en&user=sIts5VgAAAAJ&view_op=list_works&sortby=pubdate" style="color: #0ea5e9; text-decoration: none;">Google Scholar</a>. 
+          (*equal contribution, #corresponding author)
+        </p>
 
-      <font size="3">
-        <b>2025</b>
-      </font>
+        <div class="publication-year">2025</div>
 
-      <li style="margin:10px">
-        Shengjie Ma*, <b>Chengjin Xu</b>*, Chaozhuo Li, Haoran Luo, Weizhi Ma, Yingxia Shao, Xing Xie, Jian Guo#.
-        Think-on-Graph 2.0: Deep and Faithful Large Language Model Reasoning with Knowledge-guided Retrieval Augmented Generation.
-         In <i> the 13th International Conference on Learning Representations (ICLR'25).</i> 
-         [<a target="_blank" href="https://arxiv.org/abs/2407.10805">PDF</a>]
-        </li> 
+        <div class="publication-item">
+          <li>
+            Shengjie Ma*, <b>Chengjin Xu</b>*, Chaozhuo Li, Haoran Luo, Weizhi Ma, Yingxia Shao, Xing Xie, Jian Guo#.
+            Think-on-Graph 2.0: Deep and Faithful Large Language Model Reasoning with Knowledge-guided Retrieval Augmented Generation.
+            In <i>the 13th International Conference on Learning Representations (ICLR'25).</i> 
+            [<a href="https://arxiv.org/abs/2407.10805">PDF</a>]
+          </li>
+        </div>
 
-      <li style="margin:10px">
-        Shengjie Ma, Xuhui Jiang, <b>Chengjin Xu</b>, Cehao Yang, Liang Zhang, Jian Guo.
-        Synthesize-on-Graph: Knowledgeable Synthetic Data Generation for Continue Pre-training of Large Language Models.
-         In <i> Learning on Graphs Conference (LoG'26).</i> 
-         [<a target="_blank" href="https://arxiv.org/abs/2505.00979">PDF</a>]
-        </li> 
+        <div class="publication-item">
+          <li>
+            Shengjie Ma, Xuhui Jiang, <b>Chengjin Xu</b>, Cehao Yang, Liang Zhang, Jian Guo.
+            Synthesize-on-Graph: Knowledgeable Synthetic Data Generation for Continue Pre-training of Large Language Models.
+            In <i>Learning on Graphs Conference (LoG'26).</i> 
+            [<a href="https://arxiv.org/abs/2505.00979">PDF</a>]
+          </li>
+        </div>
 
-      <li style="margin:10px">
-        Cehao Yang, Xin Lin, <b>Chengjin Xu</b>, Xuhui Jiang, Shengjie Ma, Anqi Liu, Hao Xiong, Jian Guo.
-        LongFaith: Enhancing Long-Context Reasoning in LLMs with Faithful Synthetic Data.
-         In <i> Findings of the Association for Computational Linguistics: ACL 2025 (ACL'25 Findings).</i> 
-         [<a target="_blank" href="https://arxiv.org/abs/2502.12583">PDF</a>]
-        </li> 
+        <div class="publication-item">
+          <li>
+            Cehao Yang, Xin Lin, <b>Chengjin Xu</b>, Xuhui Jiang, Shengjie Ma, Anqi Liu, Hao Xiong, Jian Guo.
+            LongFaith: Enhancing Long-Context Reasoning in LLMs with Faithful Synthetic Data.
+            In <i>Findings of the Association for Computational Linguistics: ACL 2025 (ACL'25 Findings).</i> 
+            [<a href="https://arxiv.org/abs/2502.12583">PDF</a>]
+          </li>
+        </div>
 
-      <li style="margin:10px">
-        Jian Gu, Xuhui Jiang, Zhichao Shi, Hanwen Tan, Xiaozhi Zhai, <b>Chengjin Xu</b>, Wei Li, Yinghan Shen, Shengjie Ma, Honghao Liu, et al.
-        A Survey on LLM-as-a-Judge.
-         In <i> The Innovation, 2025.</i> 
-         [<a target="_blank" href="https://www.cell.com/the-innovation/fulltext/S2666-6758(25)00456-4">Link</a>] <b>(1185 citations)</b>
-        </li>
+        <div class="publication-item">
+          <li>
+            Jian Gu, Xuhui Jiang, Zhichao Shi, Hanwen Tan, Xiaozhi Zhai, <b>Chengjin Xu</b>, Wei Li, Yinghan Shen, Shengjie Ma, Honghao Liu, et al.
+            A Survey on LLM-as-a-Judge.
+            In <i>The Innovation, 2025.</i> 
+            [<a href="https://www.cell.com/the-innovation/fulltext/S2666-6758(25)00456-4">Link</a>] <b>(1185 citations)</b>
+          </li>
+        </div>
 
-      <li style="margin:10px">
-        Mingxian Peixian, Xin Zhuang, <b>Chengjin Xu</b>, Xuhui Jiang, Rui Chen, Jian Guo.
-        SQL-R1: Training Natural Language to SQL Reasoning Model by Reinforcement Learning.
-         In <i> The Thirty-ninth Annual Conference on Neural Information Processing Systems (NeurIPS'25).</i> 
-         [<a target="_blank" href="#">PDF</a>] <b>(43 citations)</b>
-        </li>
+        <div class="publication-item">
+          <li>
+            Mingxian Peixian, Xin Zhuang, <b>Chengjin Xu</b>, Xuhui Jiang, Rui Chen, Jian Guo.
+            SQL-R1: Training Natural Language to SQL Reasoning Model by Reinforcement Learning.
+            In <i>The Thirty-ninth Annual Conference on Neural Information Processing Systems (NeurIPS'25).</i> 
+            [<a href="#">PDF</a>] <b>(43 citations)</b>
+          </li>
+        </div>
 
-      <li style="margin:10px">
-        Shengjie Ma*, <b>Chengjin Xu</b>*, Chaozhuo Li, Haoran Luo, Weizhi Ma, Yingxia Shao, Xing Xie, Jian Guo#.
-        Think-on-Graph 2.0: Deep and Interpretable Large Language Model Reasoning with Knowledge Graph-guided Retrieval.
-         In <i> the 13th International Conference on Learning Representations (ICLR'25).</i> 
-         [<a target="_blank" href="https://arxiv.org/abs/2407.10805">PDF</a>] <b>(131 citations)</b>
-        </li>
+        <div class="publication-item">
+          <li>
+            Zheng Xu, Bo Ou, Yiqi Qi, Shudong Du, <b>Chengjin Xu</b>, Chengquan Yuan, Jian Guo.
+            ChartMoE: Mixture of Expert Connector for Advanced Chart Understanding.
+            In <i>the 13th International Conference on Learning Representations (ICLR'25, Oral).</i> 
+            [<a href="#">PDF</a>] <b>(35 citations)</b>
+          </li>
+        </div>
 
-      <li style="margin:10px">
-        Zheng Xu, Bo Ou, Yiqi Qi, Shudong Du, <b>Chengjin Xu</b>, Chengquan Yuan, Jian Guo.
-        ChartMoE: Mixture of Expert Connector for Advanced Chart Understanding.
-         In <i> the 13th International Conference on Learning Representations (ICLR'25, Oral).</i> 
-         [<a target="_blank" href="#">PDF</a>] <b>(35 citations)</b>
-        </li>
+        <div class="publication-item">
+          <li>
+            Mingzhi Li, Cehao Yang, <b>Chengjin Xu</b>, Xuhui Jiang, Yiqi Qi, Jian Guo, Hau Leung, Irwin King.
+            Retrieval, Reasoning, Re-ranking: A Context-Enriched Framework for Knowledge Graph Completion.
+            In <i>Proceedings of the 2025 Conference of the North American Chapter of the Association for Computational Linguistics (NAACL'25).</i> 
+            [<a href="#">PDF</a>] <b>(10 citations)</b>
+          </li>
+        </div>
 
-      <li style="margin:10px">
-        Mingzhi Li, Cehao Yang, <b>Chengjin Xu</b>, Xuhui Jiang, Yiqi Qi, Jian Guo, Hau Leung, Irwin King.
-        Retrieval, Reasoning, Re-ranking: A Context-Enriched Framework for Knowledge Graph Completion.
-         In <i> Proceedings of the 2025 Conference of the North American Chapter of the Association for Computational Linguistics (NAACL'25).</i> 
-         [<a target="_blank" href="#">PDF</a>] <b>(10 citations)</b>
-        </li>
+        <div class="publication-item">
+          <li>
+            Bingchen Cao, Xin Lin, Yiqi Qi, <b>Chengjin Xu</b>, Cehao Yang, Jian Guo.
+            Financial Wind Tunnel: A Retrieval-Augmented Market Simulator.
+            In <i>Proceedings of the Web Conference 2026 (WWW'26).</i> 
+            [<a href="https://arxiv.org/abs/2503.17909">PDF</a>]
+          </li>
+        </div>
 
-      <li style="margin:10px">
-        Jian Shen, <b>Chengjin Xu</b>, Yue Liu, Xuhui Jiang, Jinglin Li, Zhen Huang, Jens Lehmann, Xiaoying Chen.
-        Learning Temporal Knowledge Graphs via Time-sensitive Graph Attention.
-         In <i> IEEE Access, 2025.</i> 
-         [<a target="_blank" href="#">Link</a>]
-        </li>
+        <div class="publication-item">
+          <li>
+            Honghao Liu, Xuhui Jiang, <b>Chengjin Xu</b>, Cehao Yang, Yiran Cheng, Jian Guo.
+            Continual Pretraining on Encrypted Synthetic Data for Privacy-Preserving LLMs.
+            In <i>Proceedings of the 20th Conference of the European Chapter of the Association for Computational Linguistics (EACL'26).</i> 
+            [<a href="https://arxiv.org/abs/2601.05635">PDF</a>]
+          </li>
+        </div>
 
-      <li style="margin:10px">
-        Cehao Yang, Xiao Wu, Xin Lin, <b>Chengjin Xu</b>, Xuhui Jiang, Yue Sun, Jinglin Li, Hao Xiong, Jian Guo.
-        GraphSearch: An Agentic Deep Searching Workflow for Graph Retrieval-Augmented Generation.
-         In <i> arXiv preprint arXiv:2509.22009, 2025.</i> 
-         [<a target="_blank" href="https://arxiv.org/abs/2509.22009">PDF</a>]
-        </li>
+        <div class="publication-item">
+          <li>
+            <b>Chengjin Xu</b>, DataArcTech Team.
+            DataArc SynData Toolkit: A Modular Synthetic Data Generation Platform.
+            In <i>Open Source Project, 2026.</i> 
+            [<a href="https://github.com/DataArcTech/DataArc-SynData-Toolkit">GitHub</a>] <b>(994 stars)</b>
+          </li>
+        </div>
 
-      <li style="margin:10px">
-        Xiao Wu, Cehao Yang, Xin Lin, <b>Chengjin Xu</b>, Xuhui Jiang, Yue Sun, Hao Xiong, Jinglin Li, Jian Guo.
-        Think-on-Graph 3.0: Efficient and Adaptive LLM Reasoning on Heterogeneous Graphs via Multi-Agent Dual-Evolving Context Retrieval.
-         In <i> arXiv preprint arXiv:2509.21710, 2025.</i> 
-         [<a target="_blank" href="https://arxiv.org/abs/2509.21710">PDF</a>]
-        </li>
+        <div class="publication-year">2024</div>
 
-      <li style="margin:10px">
-        Zhichao Shi, Xuhui Jiang, <b>Chengjin Xu</b>, Cehao Yao, Zhen Huang, Shengjie Ma, Yinghan Shen, Yuanzhuo Wang.
-        JudgeAgent: Dynamically Evaluate LLMs with Agent-as-Interviewer.
-         In <i> arXiv preprint arXiv:2509.02097, 2025.</i> 
-         [<a target="_blank" href="https://arxiv.org/abs/2509.02097">PDF</a>]
-        </li>
+        <div class="publication-item">
+          <li>
+            Xuhui Jiang*, <b>Chengjin Xu</b>*, Yinghan Shen, Fenglong Su, Yuanzhuo Wang, Fei Sun, Zixuan Li, Huawei Shen.
+            Toward Practical Entity Alignment Method Design: Insights from New Highly Heterogeneous Knowledge Graph Datasets.
+            In <i>Proceedings of the Web Conference 2024 (WWW'24).</i> 
+            [<a href="https://arxiv.org/pdf/2304.03468.pdf">PDF</a>] <b>(Oral Paper)</b>
+          </li>
+        </div>
 
-      <li style="margin:10px">
-        Cehao Yang, Xin Lin, Xiao Wu, <b>Chengjin Xu</b>, Xuhui Jiang, Honghao Liu, Hao Xiong, Jian Guo.
-        Select2reason: Efficient Instruction-tuning Data Selection for Long-context Reasoning.
-         In <i> arXiv preprint arXiv:2505.17266, 2025.</i> 
-         [<a target="_blank" href="https://arxiv.org/abs/2505.17266">PDF</a>]
-        </li>
+        <div class="publication-item">
+          <li>
+            Jiashuo Sun*, <b>Chengjin Xu</b>*, Lumingyuan Tang*, Saizhuo Wang, Chen Lin, Yeyun Gong, Heung-Yeung Shum, Jian Guo#.
+            Think-on-Graph: Deep and Responsible Reasoning of Large Language Model with Knowledge Graph.
+            In <i>the 12th International Conference on Learning Representations (ICLR'24).</i> 
+            [<a href="https://arxiv.org/pdf/2307.07697.pdf">PDF</a>] [<a href="https://github.com/IDEA-FinAI/ToG">Code</a>]
+          </li>
+        </div>
 
-      <li style="margin:10px">
-        Bingchen Cao, Xin Lin, Yiqi Qi, <b>Chengjin Xu</b>, Cehao Yang, Jian Guo.
-        Financial Wind Tunnel: A Retrieval-Augmented Market Simulator.
-         In <i> Proceedings of the Web Conference 2026 (WWW'26).</i> 
-         [<a target="_blank" href="https://arxiv.org/abs/2503.17909">PDF</a>]
-        </li>
+        <div class="publication-item">
+          <li>
+            Xuhui Jiang, Yinghan Shen, Zhichao Shi, <b>Chengjin Xu</b>, Wei Li, Zixuan Li, Jian Guo, Huawei Shen, Yuanzhuo Wang.
+            Unlocking the Power of Large Language Models for Entity Alignment.
+            In <i>The 62nd Annual Meeting of the Association for Computational Linguistics (ACL'24).</i> 
+            [<a href="https://arxiv.org/pdf/2402.15048">PDF</a>]
+          </li>
+        </div>
 
-      <li style="margin:10px">
-        Zheng Xu, Shudong Du, Yiqi Qi, Shuang Lu, <b>Chengjin Xu</b>, Chengquan Yuan, Jian Guo.
-        Chartpoint: Guiding MLLMs with Grounding Reflection for Chart Reasoning.
-         In <i> Proceedings of the IEEE/CVF International Conference on Computer Vision, 2025.</i> 
-         [<a target="_blank" href="#">PDF</a>]
-        </li>
+        <div class="publication-item">
+          <li>
+            Xuhui Jiang, Yinghan Shen, Zhichao Shi, <b>Chengjin Xu</b>, Wei Li, Huixuan Zihe, Jian Guo, Yuanzhuo Wang.
+            MM-ChatAlign: A Novel Multimodal Reasoning Framework based on Large Language Models for Entity Alignment.
+            In <i>Findings of the Association for Computational Linguistics: EMNLP 2024 (EMNLP'24 Findings).</i> 
+            [<a href="#">PDF</a>]
+          </li>
+        </div>
 
-      <li style="margin:10px">
-        Xin Lin, Cehao Yang, Yue Ma, Mingzhi Li, Runze Zhang, Yini Ni, Xiao Wu, <b>Chengjin Xu</b>, Jian Guo, Hao Xiong.
-        RETuning: Upgrading Inference-Time Scaling for Stock Movement Prediction with Large Language Models.
-         In <i> arXiv preprint arXiv:2510.21604, 2025.</i> 
-         [<a target="_blank" href="https://arxiv.org/abs/2510.21604">PDF</a>]
-        </li>
-
-      <li style="margin:10px">
-        Honghao Liu, Xuhui Jiang, <b>Chengjin Xu</b>, Cehao Yang, Yiran Cheng, Jian Guo.
-        Continual Pretraining on Encrypted Synthetic Data for Privacy-Preserving LLMs.
-         In <i> Proceedings of the 20th Conference of the European Chapter of the Association for Computational Linguistics (EACL'26).</i> 
-         [<a target="_blank" href="https://arxiv.org/abs/2601.05635">PDF</a>]
-        </li>
-
-      <li style="margin:10px">
-        <b>Chengjin Xu</b>, DataArcTech Team.
-        DataArc SynData Toolkit: A Modular Synthetic Data Generation Platform.
-         In <i> Open Source Project, 2026.</i> 
-         [<a target="_blank" href="https://github.com/DataArcTech/DataArc-SynData-Toolkit">GitHub</a>] <b>(994 stars)</b>
-        </li>
-
-      <li style="margin:10px">
-        Baogui Xu, Yao Lu, <b>Chengjin Xu</b>.
-        Modeling Multi-Modal Knowledge Graph in Complex Space for Entity Alignment.
-         In <i> 2025.</i> 
-        </li> 
-
-      <font size="3">
-        <b>2024</b>
-      </font>
-
-      <li style="margin:10px">
-        Xuhui Jiang*, <b>Chengjin Xu</b>*, Yinghan Shen, Fenglong Su, Yuanzhuo Wang, Fei Sun, Zixuan Li, Huawei Shen.
-        Toward Practical Entity Alignment Method Design: Insights from New Highly Heterogeneous Knowledge Graph Datasets.
-         In <i> Proceedings of the Web Conference 2024 (WWW'24).</i> 
-         [<a target="_blank" href="https://arxiv.org/pdf/2304.03468.pdf">PDF</a>] <b>(Oral Paper)</b>
-        </li> 
-
-      <li style="margin:10px">
-      Jiashuo Sun*, <b>Chengjin Xu</b>*, Lumingyuan Tang*, Saizhuo Wang, Chen Lin, Yeyun Gong, Heung-Yeung Shum, Jian Guo#.
-      Think-on-Graph: Deep and Responsible Reasoning of Large Language Model with Knowledge Graph.
-       In <i> the 12th International Conference on Learning Representations  (ICLR'24).</i> 
-       [<a target="_blank" href="https://arxiv.org/pdf/2307.07697.pdf">PDF</a>] [<a href="https://github.com/IDEA-FinAI/ToG">Code</a>]
-      </li> 
-
-      <li style="margin:10px">
-        Xuhui Jiang, Yinghan Shen, Zhichao Shi, <b>Chengjin Xu</b>, Wei Li, Zixuan Li, Jian Guo, Huawei Shen, Yuanzhuo Wang.
-        Unlocking the Power of Large Language Models for Entity Alignment.
-        In <i>The 62nd Annual Meeting of the Association for Computational Linguistics (ACL'24).</i> 
-        [<a target="_blank" href="https://arxiv.org/pdf/2402.15048">PDF</a>]
-        </li> 
-
-      <li style="margin:10px">
-        Yi Luo, Zhenghao Lin, YuHao Zhang, Jiashuo Sun, Chen Lin, <b>Chengjin Xu</b>, Xiangdong Su, Yelong Shen, Jian Guo, Yeyun Gong.
-        Ensuring Safe and High-Quality Outputs: A Guideline Library Approach for Language Models.
-        In <i>Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics (NAACL'24).</i> 
-        [<a target="_blank" href="https://openreview.net/pdf?id=_pmZ7mj7gU">PDF</a>]
-        </li>
-
-      <li style="margin:10px">
-        Xuhui Jiang, Yinghan Shen, Zhichao Shi, <b>Chengjin Xu</b>, Wei Li, Huixuan Zihe, Jian Guo, Yuanzhuo Wang.
-        MM-ChatAlign: A Novel Multimodal Reasoning Framework based on Large Language Models for Entity Alignment.
-        In <i>Findings of the Association for Computational Linguistics: EMNLP 2024 (EMNLP'24 Findings).</i> 
-        [<a target="_blank" href="#">PDF</a>]
-        </li>
-
-      <li style="margin:10px">
-        Mingzhi Li, Cehao Yang, <b>Chengjin Xu</b>, Zheng Song, Xuhui Jiang, Jian Guo, Hau Leung, Irwin King.
-        Context-aware Inductive Knowledge Graph Completion with Latent Type Constraints and Subgraph Reasoning.
-        In <i>Proceedings of the 39th AAAI Conference on Artificial Intelligence (AAAI'25).</i> 
-        [<a target="_blank" href="#">PDF</a>]
-        </li>
-
-      <li style="margin:10px">
-        Zihao Chen, <b>Chengjin Xu</b>, Deqing Wang, Zhen Huang, Yudou Dou, Xuhui Jiang, Jian Guo.
-        Rulerag: Rule-guided Retrieval-Augmented Generation with Language Models for Question Answering.
-        In <i>arXiv preprint arXiv:2410.22353, 2024.</i> 
-        [<a target="_blank" href="https://arxiv.org/abs/2410.22353">PDF</a>]
-        </li>
-
-      <li style="margin:10px">
-        Zihao Chen, <b>Chengjin Xu</b>, Yiqi Qi, Jian Guo.
-        Mllm is a Strong Reranker: Advancing Multimodal Retrieval-Augmented Generation via Knowledge-Enhanced Reranking and Noise-Injected Training.
-        In <i>arXiv preprint arXiv:2407.21439, 2024.</i> 
-        [<a target="_blank" href="https://arxiv.org/abs/2407.21439">PDF</a>]
-        </li>
-
-      <li style="margin:10px">
-        Cehao Yang, <b>Chengjin Xu</b>, Yiqi Qi.
-        Financial Knowledge Large Language Model.
-        In <i>arXiv preprint arXiv:2407.00365, 2024.</i> 
-        [<a target="_blank" href="https://arxiv.org/abs/2407.00365">PDF</a>]
-        </li>
-
-      <li style="margin:10px">
-        <b>Chengjin Xu</b>, Mingzhi Li, Cehao Yang, Xuhui Jiang, Lumingyuan Tang, Yiqi Qi, Jian Guo.
-        Context Graph.
-        In <i>arXiv preprint arXiv:2406.11160, 2024.</i> 
-        [<a target="_blank" href="https://arxiv.org/abs/2406.11160">PDF</a>]
-        </li>
-
-      <li style="margin:10px">
-        Xuhui Jiang, Yifan Tian, Fanghua Hua, <b>Chengjin Xu</b>, Yuanzhuo Wang, Jian Guo.
-        A Survey on Large Language Model Hallucination via a Creativity Perspective.
-        In <i>arXiv preprint arXiv:2402.06647, 2024.</i> 
-        [<a target="_blank" href="https://arxiv.org/abs/2402.06647">PDF</a>]
-        </li>
-
-      <li style="margin:10px">
-        Xiao Wu, Jiajun Liu, Haisu Su, Zelin Lin, Yiqi Qi, <b>Chengjin Xu</b>, Jinsong Su, Jian Zhong, Fangwei Wang, Siyu Wang, et al.
-        Golden Touchstone: A Comprehensive Bilingual Benchmark for Evaluating Financial Large Language Models.
-        In <i>arXiv preprint arXiv:2411.06272, 2024.</i> 
-        [<a target="_blank" href="https://arxiv.org/abs/2411.06272">PDF</a>]
-        </li>
-
-      <li style="margin:10px">
-        Boyang Song, Kossi Amouzouvi, <b>Chengjin Xu</b>, Maribel Wang, Jens Lehmann, Sahar Vahdati.
-        Temporal Relevance for Representing Learning over Temporal Knowledge Graphs.
-        In <i>Semantic Web Journal, 2024.</i> 
-        [<a target="_blank" href="#">Link</a>]
-        </li> 
-
-        <font size="3">
-            <b>2023</b>
-        </font>
-
-
-
-
-       <li style="margin:10px">
-        Xueyuan Lin, Haihong E#, <b>Chengjin Xu</b>#, Gengxian Zhou, Haoran Luo, Tianyi Hu, Fenglong Su, Ningyuan Li, Mingzhi Sun.
-        TFLEX: Temporal Feature-Logic Embedding Framework for Complex Reasoning over Temporal Knowledge Graph.
-         In <i>Proceedings of the 37th Conference on Neural Information Processing System  (NeurIPS'23).</i> 
-         [<a target="_blank" href="https://openreview.net/pdf?id=oaGdsgB18L">PDF</a>] [<a href="https://github.com/LinXueyuanStdio/TFLEX">Code</a>]
-        </li> 
-      
-       <li style="margin:10px">
-        Baogui Xu*, <b>Chengjin Xu</b>*, Bing Su.
-        Cross-Modal Graph Attention Network for Entity Alignment.
-          In <i>The 31st ACM International Conference on Multimedia (ACM MM'23). </i> 
-          [<a target="_blank" href="https://dl.acm.org/doi/abs/10.1145/3581783.3612151">Link</a>] 
-        </li> 
-      
-        <li style="margin:10px">
-        Zhongwu Chen, <b>Chengjin Xu</b>#, Fenglong Su#, Zhen Huang#, Yong Dou.
-        Incorporating Structured Sentences with Time-enhanced BERT for Fully-inductive Temporal Relation Prediction.
-        In <i>The 46th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR'23).</i>  [<a href="https://arxiv.org/pdf/2304.04717.pdf">PDF</a>]
-        </li>
-      
-       <li style="margin:10px">
-        Zhongwu Chen, <b>Chengjin Xu</b>#, Fenglong Su#, Zhen Huang#, Yong Dou.
-        Meta-Learning Based Knowledge Extrapolation for Temporal Knowledge Graph.
-          In <i> Proceedings of the Web Conference 2023 (WWW'23). </i> [<a href="https://arxiv.org/pdf/2302.05640.pdf">PDF</a>]
-        </li> 
-
-
-        <li style="margin:10px">
-        Zhongwu Chen, <b>Chengjin Xu</b>#, Fenglong Su#, Zhen Huang#, Yong Dou.
-        Temporal Extrapolation and Knowledge Transfer for Lifelong Temporal Knowledge Graph Reasoning.
-          In <i> Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing (EMNLP'23 Findings). </i>
-        </li> 
-      
-        <li style="margin:10px">
-          Bowen Song, <b>Chengjin Xu</b>, Kossi Amouzouvi, Maocai Wang#, Jens Lehmann, Sahar Vahdati.
-          Distinct Geometrical Representations for Temporal and Relational Structures in Knowledge Graphs.
-          In <i>European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases 2023 (ECML'23). </i> 
-          [<a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-031-43418-1_36">Link</a>] 
-        </li>
-
-
-        <li style="margin:10px">
-          Baogui Xu, <b>Chengjin Xu</b>, Bing Su.
-          Task-sensitive Discriminative Mutual Attention Network for Few-shot Learning.
-          In <i> The European Conference on Artificial Intelligence 2023 (ECAI'23). </i> 
-          [<a href="https://www.researchgate.net/publication/374310588_Task-Sensitive_Discriminative_Mutual_Attention_Network_for_Few-Shot_Learning">PDF</a>]
-        </li>
-
-      
-        <li style="margin:10px">
-          Xuhui Jiang, Yinghan Shen, Yuanzhuo Wang, Huawei Shen, <b>Chengjin Xu</b>, Shengjie Ma.
-          Meta-Path based Social Relation Reasoning in A Deep and Robust Way.
-          In <i>The 28th International Conference on Database Systems for Advanced Applications (DASFAA'23). </i> 
-          [<a target="_blank" href="https://dl.acm.org/doi/abs/10.1145/3581783.3612151">Link</a>] 
-
-        </li> 
- 
-      
-        <li style="margin:10px">
-          Fenglong Su, <b>Chengjin Xu</b>#, Han Yang, Zhongwu Chen, Ning Jing.
-        Iterative Neural Entity Alignment with Cross-modal Supervision.
-          In <i> Information Processing and Management, 2023. </i> 
-          [<a target="_blank" href="https://www.sciencedirect.com/science/article/abs/pii/S0306457322002758">Link</a>] 
-        </li> 
-        
-        <li style="margin:10px">
-          Yinghan Shen, Xuhui Jiang, Zijian Li, Yuanzhuo Wang, <b>Chengjin Xu</b>, Huawei Shen, Xueqi Cheng.
-          Uniskgrep: A Unified Representation Learning Framework of Social Network and Knowledge Graph.
-          In <i> Neural Networks, 2023. </i> 
-          [<a target="_blank" href="https://www.sciencedirect.com/science/article/abs/pii/S0893608022004518">Link</a>] 
-        </li>  
-      
-        <font size="3">
-            <b>2022 and prior</b>
-        </font>
-        <li style="margin:10px"><b>Chengjin Xu</b>, Fenglong Su, Bo Xiong, Jens Lehmann.
-          Time-aware Entity Alignment using Temporal Relational Attention.
-          In <i>Proceedings of the ACM Web Conference 2022 (WWW'22). </i>  [<a href="https://www.researchgate.net/profile/Chengjin-Xu/publication/360180258_Time-aware_Entity_Alignment_using_Temporal_Relational_Attention/links/63755c2d54eb5f547cda302f/Time-aware-Entity-Alignment-using-Temporal-Relational-Attention.pdf">PDF</a>]
-        </li>
-
-        <li style="margin:10px">Bo Xiong, Shichao Zhu, Mojtaba Nayyeri, <b>Chengjin Xu</b>, Shirui Pan, Chuan Zhou, Steffen Staab.
-          Ultrahyperbolic Knowledge Graph Embeddings.
-          In <i>The 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD'22). </i>  [<a href="https://arxiv.org/pdf/2206.00449.pdf">PDF</a>]
-        </li>
-
-        
-        <li style="margin:10px"><b>Chengjin Xu</b>, Mojtaba Nayyeri, Yung-Yu Chen, Jens Lehmann.
-          Geometric Algebra based Embeddings for Static and Temporal Knowledge Graph Completion.
-          In <i>IEEE Transactions on Knowledge and Data Engineering (TKDE), 2022. </i>  [<a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/9713947">Link</a>] 
-        </li>
-
-
-        <li style="margin:10px"><b>Chengjin Xu</b>, Fenglong Su, Jens Lehmann.
-          Time-aware Graph Neural Network for Entity Alignment between Temporal Knowledge Graphs.
-          In <i>Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing (EMNLP'21). </i>  [<a href="https://aclanthology.org/2021.emnlp-main.709.pdf">PDF</a>] [<a href="https://github.com/soledad921/TEA-GNN">Code</a>] 
-        </li>
-
-        <li style="margin:10px"><b>Chengjin Xu</b>, Fenglong Su, Jens Lehmann.
-          Knowledge Graph Representation Learning using Ordinary Differential Equations.
-          In <i>Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing (EMNLP'21). </i>  [<a href="https://aclanthology.org/2021.emnlp-main.750.pdf">PDF</a>] <b>(Oral Paper)</b>
-        </li>
-
-        <li style="margin:10px"><b>Chengjin Xu</b>, Yung-Yu Chen, Mojtaba Nayyeri, Jens Lehmann.
-          Temporal Knowledge Graph Completion using a Linear Temporal Regularizer and Multivector Embeddings.
-          In <i>Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics (NAACL'21). </i>  [<a href="https://aclanthology.org/2021.naacl-main.202.pdf">PDF</a>][<a href="https://github.com/soledad921/TeLM">Code</a>] 
-        </li>
-
-        <li style="margin:10px">Mojtaba Nayyeri, <b>Chengjin Xu</b>, Mirza Mohtashim Alam, Jens Lehmann, Hamed Shariat Yazdi.
-          LogicENN: A Neural based Knowledge Graph Embedding Model with Logical Rules.
-          In <i>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2021. </i>  [<a href="https://arxiv.org/pdf/1908.07141.pdf">PDF</a>]
-        </li>
-
-        <li style="margin:10px"><b>Chengjin Xu</b>, Mojtaba Nayyeri, Yung-Yu Chen, Jens Lehmann.
-          Knowledge Graph Embeddings in Geometric Algebras.
-          In <i>Proceedings of the 28th International Conference on Computational Linguistics (COLING'20). </i>  [<a href="https://aclanthology.org/2020.coling-main.46.pdf">PDF</a>] <b>(Oral Paper)</b>
-        </li>
-
-        <li style="margin:10px"><b>Chengjin Xu</b>, Mojtaba Nayyeri, Fouad Alkhoury, Hamed Shariat Yazdi, Jens Lehmann.
-          TeRo: A Time-aware Knowledge Graph Embedding via Temporal Rotation.
-          In <i>Proceedings of the 28th International Conference on Computational Linguistics (COLING'20). </i>  [<a href="https://aclanthology.org/2020.coling-main.46.pdf">PDF</a>][<a href="https://github.com/soledad921/ATISE">Code</a>]
-        </li>
-
-        <li style="margin:10px"><b>Chengjin Xu</b>, Mojtaba Nayyeri, Fouad Alkhoury, Hamed Shariat Yazdi, Jens Lehmann.
-          Temporal Knowledge Graph Completion Based on Time Series Gaussian Embedding.
-          In <i>International Semantic Web Conference 2020 (ISWC'20). </i>  [<a href="https://arxiv.org/pdf/1911.07893.pdf">PDF</a>][<a href="https://github.com/soledad921/ATISE">Code</a>] <b>(Spotlight Paper)</b>
-        </li>
-
-        <li style="margin:10px">Mojtaba Nayyeri, <b>Chengjin Xu</b>, Sahar Vahdati, Nadezhda Vassilyeva, Emanuel Sallinger, Hamed Shariat Yazdi, Jens Lehmann.
-          Fantastic Knowledge Graph Embeddings and How to Find the Right Space for Them.
-          In <i>International Semantic Web Conference 2020 (ISWC'20). </i>  [<a href="https://www.researchgate.net/profile/Chengjin-Xu/publication/346501394_Fantastic_Knowledge_Graph_Embeddings_and_How_to_Find_the_Right_Space_for_Them/links/63755cfa54eb5f547cda305e/Fantastic-Knowledge-Graph-Embeddings-and-How-to-Find-the-Right-Space-for-Them.pdf">PDF</a>]
-        </li>
-
-<!--          <li style="margin:10px"><b>Jiarong Xu</b>, Chen Chen, Ye Yang and Jiangang Lu.
-        Dynamic Modeling of Wax Hydrogenation Unit Based on LSTM-DNN Deep Learning.
-        In <i>Proceedings of the 29th Chinese Process Control Conference (CPCC'18).</i>
-        </li>
-
-         <li style="margin:10px"><b>Jiarong Xu</b> and Cao Yu.
-        A Particle Swarm Algorithm with Frog Leaping Behavior for designing optimal PID controller.
-        In <i>Proceedings of Chinese Process Automation Congress (CAC'15).</i>
-        </li>
- -->
+        <div class="publication-item">
+          <li>
+            Mingzhi Li, Cehao Yang, <b>Chengjin Xu</b>, Zheng Song, Xuhui Jiang, Jian Guo, Hau Leung, Irwin King.
+            Context-aware Inductive Knowledge Graph Completion with Latent Type Constraints and Subgraph Reasoning.
+            In <i>Proceedings of the 39th AAAI Conference on Artificial Intelligence (AAAI'25).</i> 
+            [<a href="#">PDF</a>]
+          </li>
+        </div>
     </div>
-    <a name="activities"></a>
+
+    <a name="news"></a>
 
     <div class="container">
         <div class="page-header">
-            <h2>Academic Activities and Honors</h2>
+            <h2>News</h2>
         </div>
-        <li style="margin:10px">
-        PC Members: NeurIPS, KDD, ICLR, WWW, AAAI, ACL, EMNLP, ECAI
-        </li>
-      
-        <li style="margin:10px">
-        Reviewers: IEEE Transactions on Knowledge and Data Engineering (TKDE), IEEE Transactions on Neural Networks and Learning Systems (TNNLS), IEEE/ACM Transactions on Audio, Speech, and Language Processing (TASLP)
-        </li>
-
-        <li style="margin:10px">
-        ISWC'2020 Best Student Paper Nominee (3/170)
-        </li>
-
-        <li style="margin:10px">
-        深圳"鹏程孔雀计划"特聘岗位人才（B档）
-        </li>
-
-        <li style="margin:10px">
-        Selected for Huawei "Genius Youth" Program
-        </li>
-    </div>
-
-  <!--   </div>
-    <a name="award"></a>
-
-    <div class="container">
-        <div class="page-header">
-            <h2>Selected Awards</h2>
+        
+        <div class="news-container">
+          <div class="news-item">
+            <span class="news-date">[2026.01]</span> We released <a href="https://github.com/DataArcTech/DataArc-SynData-Toolkit">DataArc SynData Toolkit</a>, an open-source synthetic data generation platform (994 stars).
+          </div>
+          
+          <div class="news-item">
+            <span class="news-date">[2026.01]</span> <a href="https://arxiv.org/abs/2601.05635">Continual Pretraining on Encrypted Synthetic Data</a> was accepted to <a href="https://2026.eacl.org/">EACL'26</a>.
+          </div>
+          
+          <div class="news-item">
+            <span class="news-date">[2026.01]</span> <a href="https://arxiv.org/abs/2503.17909">Financial Wind Tunnel</a> was accepted to <a href="https://www2026.thewebconf.org/">WWW'26</a>.
+          </div>
+          
+          <div class="news-item">
+            <span class="news-date">[2026.01]</span> <a href="https://arxiv.org/abs/2505.00979">Synthesize-on-Graph</a> was accepted to <a href="#">LoG'26</a>.
+          </div>
+          
+          <div class="news-item">
+            <span class="news-date">[2025.09]</span> <a href="#">SQL-R1</a> was accepted to <a href="https://nips.cc/Conferences/2025">NeurIPS'25</a>.
+          </div>
+          
+          <div class="news-item">
+            <span class="news-date">[2025.05]</span> <a href="https://arxiv.org/abs/2502.12583">LongFaith</a> was accepted to <a href="https://2025.aclweb.org/">ACL'25 Findings</a>.
+          </div>
+          
+          <div class="news-item">
+            <span class="news-date">[2025.01]</span> <a href="https://arxiv.org/abs/2407.10805">Think-on-Graph 2.0</a> was accepted to <a href="https://iclr.cc/Conferences/2025">ICLR'25</a>.
+          </div>
+          
+          <div class="news-item">
+            <span class="news-date">[2025.01]</span> <a href="#">ChartMoE</a> was accepted to <a href="https://iclr.cc/Conferences/2025">ICLR'25</a> as an oral paper.
+          </div>
+          
+          <div class="news-item">
+            <span class="news-date">[2025.01]</span> I co-founded DataArc Technology Inc. and serve as CTO. DataArc is incubated by IDEA.
+          </div>
+          
+          <div class="news-item">
+            <span class="news-date">[2024.11]</span> <a href="#">Context-aware Inductive KGC</a> was accepted to <a href="https://aaai.org/conference/aaai/aaai-25/">AAAI'25</a>.
+          </div>
+          
+          <div class="news-item">
+            <span class="news-date">[2024.10]</span> <a href="#">Retrieval, Reasoning, Re-ranking</a> was accepted to <a href="https://2025.naacl.org/">NAACL'25</a>.
+          </div>
+          
+          <div class="news-item">
+            <span class="news-date">[2024.10]</span> <a href="https://arxiv.org/pdf/2402.15048">MM-ChatAlign</a> was accepted to <a href="https://2024.emnlp.org/">EMNLP'24 Findings</a>.
+          </div>
+          
+          <div class="news-item">
+            <span class="news-date">[2024.09]</span> Our survey paper <a href="https://www.cell.com/the-innovation/fulltext/S2666-6758(25)00456-4">A Survey on LLM-as-a-Judge</a> was published in <i>The Innovation</i>.
+          </div>
+          
+          <div class="news-item">
+            <span class="news-date">[2024.05]</span> <a href="https://arxiv.org/pdf/2402.15048">ChatEA</a> was accepted to <a href="https://2024.aclweb.org/">ACL'24</a>.
+          </div>
+          
+          <div class="news-item">
+            <span class="news-date">[2024.03]</span> <a href="https://arxiv.org/pdf/2304.03468.pdf">Toward Practical Entity Alignment</a> was accepted to <a href="https://www2024.thewebconf.org/">WWW'24</a> as an oral paper.
+          </div>
         </div>
-        <li style="margin:10px">
-        2019, Best Poster Award, Singapore, AI Summer School
-        <li style="margin:10px">
-        2016, Best graduation thesis of Donghua University
-        </li>
-        <li style="margin:10px">
-        2016, Outstanding Graduates of Shanghai
-        </li>
-        <li style="margin:10px">
-        2015, National Scholarship, China
-        </li>
     </div>
 
-    <hr> -->
-
-    </div>
     <a name="contact"></a>
 
     <div class="container">
-        <div class="page-header">
-            <h2>Contact</h2>
+        <div class="contact-section">
+            <h3>Get in Touch</h3>
+            <p>Feel free to reach out if you have any questions or collaboration opportunities.</p>
+            <a href="mailto:xuchengjin@dataarctech.com" class="contact-email">
+              <i class="fas fa-envelope"></i> xuchengjin@dataarctech.com
+            </a>
         </div>
-                <div class="col-xs-12 col-md-8">
-                    <ul class="fa-ul">
-                        
-                        <li>
-                            <i class="fa-li fa fa-envelope fa-2x" aria-hidden="true"></i>
-                            <span>
-                                <a href="mailto:xuchengjin@idea.edu.cn">xuchengjin@idea.edu.cn</a></span>
-                        </li>
-                        <li>
-                            <i class="fa-li fa fa-map-marker fa-2x" aria-hidden="true"></i>
-                            <span>Room 3901, Building 1, Changfu Jinmao Mansion, No. 5 Shi Hua Road, Futian District, Shenzhen</span></li>
-                    </ul>
-                </div>
     </div>
-<!-- 
-    <div style="width: 33%; text-align: center; margin: 0 auto;">
-        <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=tebCSlmqux9N9QrcNmOiT0PXzoscPYQd7ftMh0JTTv0&amp;cl=ffffff&amp;w=a"></script>
-    </div>
-    <hr> -->
 
-    <footer>
-        <p style="margin:10px;">Created by <a href=""> Chengjin Xu </a>, using a design from <a href="http://getbootstrap.com/"> bootstrap </a></p>
-    </footer>
-    </div> <!-- /container
+    <br><br>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
   </body>
 </html>
